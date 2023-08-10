@@ -6634,7 +6634,7 @@ spawn(function()
     end
 end)
 end
-
+ if World3 then
 	Main:Seperator(" Katakuri Boss ")
 local  Mob_Kill_Cake_Prince  = Main:Label("Total")
 Main:Toggle( "Spawm Katakuri + Check Katakuri" ,_G.Auto_Cake_Pr1ince,function(value)
@@ -6756,8 +6756,7 @@ end)
 			end
 		end
 	end)
-	
-	
+	end
 	
 	
 	
