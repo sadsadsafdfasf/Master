@@ -4117,7 +4117,7 @@ end
 spawn(function()
 	pcall(function()
 		game:GetService("RunService").Stepped:Connect(function()
-		  	if _G.Auto_Farm_Level or _G.Auto_New_World or _G.AutoFarmFruitMastery or _G.thuocsung or _G.sungtegiac or _G.AutoFarmGunMastery or _G.Auto_Third_World or _G.duoica or _G.Auto_Farm_Chest or _G.TeleportIsland or _G.SeaBeasts1 or _G.vayrong or _G.Auto_Farm_Boss or _G.Autotushita or _G.Auto_Elite_Hunter or _G.Auto_Cake_Prince or _G.Auto_Farm_All_Boss or _G.Auto_Saber or _G.Auto_Pole or _G.Auto_Farm_Scrap_and_Leather or _G.Auto_Farm_Angel_Wing or _G.Auto_Factory_Farm or _G.Auto_Farm_Ectoplasm or _G.Auto_Bartilo_Quest or _G.Auto_Rengoku or _G.Auto_Farm_Radioactive or _G.Auto_Farm_Vampire_Fang or _G.Auto_Farm_Mystic_Droplet or _G.Auto_Farm_GunPowder or _G.Auto_Farm_Dragon_Scales or _G.Auto_Evo_Race_V2 or _G.Auto_Swan_Glasses or _G.Auto_Dragon_Trident or _G.Auto_Soul_Reaper or _G.Auto_Farm_Fish_Tail or _G.Auto_Farm_Mini_Tusk or _G.Auto_Farm_Magma_Ore or _G.Auto_Farm_Bone or _G.Auto_Farm_Bone1 or _G.Cacao or _G.Auto_Farm_Conjured_Cocoa or _G.Auto_Open_Dough_Dungeon or _G.Auto_Rainbow_Haki or _G.Auto_Musketeer_Hat or _G.Auto_Holy_Torch or _G.Auto_Canvander or _G.d or _G.Auto_Twin_Hook or _G.Auto_Serpent_Bow or _G.AutoFarmMaterial or _G.Auto_Fully_Death_Step or _G.Auto_Fully_SharkMan_Karate or _G.Teleport_to_Player or _G.Auto_Kill_Player_Melee or _G.Auto_Kill_Player_Gun or _G.Start_Tween_Island or _G.Auto_Next_Island or _G.autoraid or AutoNextIsland or _G.Auto_Farm_Sword or _G.MeleeFarm or _G.AutoFarmSelectMonster or _G.AutoFarmKenHakivor or _G.AutoObservationHakiV2 or _G.GunMastery or _G.AutoFactory or _G.Mastery or _G.Auto_Kill_Law then
+		  	if _G.Auto_Farm_Level or _G.Auto_New_World or _G.AutoFarmFruitMastery or _G.thuocsung or _G.sungtegiac or _G.shinapo or _G.chatpong or _G.rangnanh or _G.AutoFarmGunMastery or _G.magma or _G.Auto_Third_World or _G.duoica or _G.Auto_Farm_Chest or _G.TeleportIsland or _G.SeaBeasts1 or _G.vayrong or _G.Auto_Farm_Boss or _G.Autotushita or _G.Auto_Elite_Hunter or _G.Auto_Cake_Prince or _G.Auto_Farm_All_Boss or _G.Auto_Saber or _G.Auto_Pole or _G.Auto_Farm_Scrap_and_Leather or _G.Auto_Farm_Angel_Wing or _G.Auto_Factory_Farm or _G.Auto_Farm_Ectoplasm or _G.Auto_Bartilo_Quest or _G.Auto_Rengoku or _G.Auto_Farm_Radioactive or _G.Auto_Farm_Vampire_Fang or _G.Auto_Farm_Mystic_Droplet or _G.Auto_Farm_GunPowder or _G.Auto_Farm_Dragon_Scales or _G.Auto_Evo_Race_V2 or _G.Auto_Swan_Glasses or _G.Auto_Dragon_Trident or _G.Auto_Soul_Reaper or _G.Auto_Farm_Fish_Tail or _G.Auto_Farm_Mini_Tusk or _G.Auto_Farm_Magma_Ore or _G.Auto_Farm_Bone or _G.Auto_Farm_Bone1 or _G.Cacao or _G.Auto_Farm_Conjured_Cocoa or _G.nuocmat or _G.Auto_Open_Dough_Dungeon or _G.Auto_Rainbow_Haki or _G.Auto_Musketeer_Hat or _G.Auto_Holy_Torch or _G.Auto_Canvander or _G.d or _G.Auto_Twin_Hook or _G.Auto_Serpent_Bow or _G.AutoFarmMaterial or _G.Auto_Fully_Death_Step or _G.Auto_Fully_SharkMan_Karate or _G.Teleport_to_Player or _G.Auto_Kill_Player_Melee or _G.Auto_Kill_Player_Gun or _G.Start_Tween_Island or _G.Auto_Next_Island or _G.autoraid or AutoNextIsland or _G.Auto_Farm_Sword or _G.MeleeFarm or _G.AutoFarmSelectMonster or _G.AutoFarmKenHakivor or _G.AutoObservationHakiV2 or _G.GunMastery or _G.AutoFactory or _G.Mastery or _G.Auto_Kill_Law then
 			 	if not game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyClip") then
 					local Noclip = Instance.new("BodyVelocity")
 					Noclip.Name = "BodyClip"
@@ -4137,7 +4137,7 @@ end)
 spawn(function()
 	pcall(function()
 		game:GetService("RunService").Stepped:Connect(function()
-			if _G.Auto_Farm_Level or _G.Auto_New_World or _G.TeleportIsland or _G.Auto_Third_World or _G.thuocsung or _G.sungtegiac or _G.Auto_Farm_Chest or _G.duoica or  _G.Auto_Farm_Boss or _G.GunMastery or _G.SeaBeasts1 or _G.Mastery or _G.vayrong or  _G.AutoFarmFruitMastery or _G.AutoFarmGunMastery or _G.Auto_Elite_Hunter or _G.AutoFarmKenHaki or _G.AutoFactory or _G.AutoFarmSelectMonster or _G.Auto_Cake_Prince or _G.Auto_Farm_All_Boss or _G.Auto_Saber or _G.Auto_Pole or _G.Auto_Farm_Scrap_and_Leather or _G.Auto_Farm_Angel_Wing or _G.Auto_Factory_Farm or _G.Auto_Farm_Ectoplasm or _G.Auto_Bartilo_Quest or _G.d or _G.Auto_Rengoku or _G.Autotushita or _G.Auto_Farm_Radioactive or _G.Auto_Farm_Vampire_Fang or _G.Auto_Farm_Mystic_Droplet or _G.Auto_Farm_GunPowder or _G.Auto_Farm_Dragon_Scales or _G.Auto_Evo_Race_V2 or _G.Auto_Swan_Glasses or _G.Auto_Dragon_Trident or _G.Auto_Soul_Reaper or _G.Auto_Farm_Fish_Tail or _G.Cacao or _G.Auto_Farm_Mini_Tusk or _G.Auto_Farm_Magma_Ore or _G.Auto_Farm_Bone or _G.Auto_Farm_Bone1 or _G.Auto_Farm_Conjured_Cocoa or _G.Auto_Open_Dough_Dungeon or _G.Auto_Rainbow_Haki or _G.Auto_Musketeer_Hat or _G.Auto_Holy_Torch or _G.Auto_Canvander or _G.AutoFarmMaterial or _G.autoraid or _G.Auto_Twin_Hook or AutoNextIsland or _G.Auto_Serpent_Bow or _G.Auto_Fully_Death_Step or _G.Auto_Fully_SharkMan_Karate or _G.Teleport_to_Player or _G.Auto_Kill_Player_Melee or _G.Auto_Kill_Player_Gun or _G.Start_Tween_Island or _G.AutoObservationHakiV2 or _G.d or _G.Auto_Next_Island or _G.Auto_Farm_Sword or _G.MeleeFarm or _G.Auto_Kill_Law then
+			if _G.Auto_Farm_Level or _G.Auto_New_World or _G.TeleportIsland or _G.Auto_Third_World or _G.shinapo or _G.rangnanh or _G.chatpong or _G.thuocsung or _G.sungtegiac or _G.Auto_Farm_Chest or _G.duoica or  _G.Auto_Farm_Boss or _G.GunMastery or _G.SeaBeasts1 or _G.Mastery or _G.vayrong or  _G.AutoFarmFruitMastery or _G.AutoFarmGunMastery or _G.Auto_Elite_Hunter or _G.AutoFarmKenHaki or _G.AutoFactory or _G.AutoFarmSelectMonster or _G.Auto_Cake_Prince or _G.Auto_Farm_All_Boss or _G.Auto_Saber or _G.Auto_Pole or _G.Auto_Farm_Scrap_and_Leather or _G.Auto_Farm_Angel_Wing or _G.Auto_Factory_Farm or _G.Auto_Farm_Ectoplasm or _G.Auto_Bartilo_Quest or _G.d or _G.Auto_Rengoku or _G.Autotushita or _G.Auto_Farm_Radioactive or _G.Auto_Farm_Vampire_Fang or _G.Auto_Farm_Mystic_Droplet or _G.Auto_Farm_GunPowder or _G.Auto_Farm_Dragon_Scales or _G.Auto_Evo_Race_V2 or _G.Auto_Swan_Glasses or _G.Auto_Dragon_Trident or _G.Auto_Soul_Reaper or _G.Auto_Farm_Fish_Tail or _G.Cacao or _G.magma or _G.Auto_Farm_Mini_Tusk or _G.nuocmat or _G.Auto_Farm_Magma_Ore or _G.Auto_Farm_Bone or _G.Auto_Farm_Bone1 or _G.Auto_Farm_Conjured_Cocoa or _G.Auto_Open_Dough_Dungeon or _G.Auto_Rainbow_Haki or _G.Auto_Musketeer_Hat or _G.Auto_Holy_Torch or _G.Auto_Canvander or _G.AutoFarmMaterial or _G.autoraid or _G.Auto_Twin_Hook or AutoNextIsland or _G.Auto_Serpent_Bow or _G.Auto_Fully_Death_Step or _G.Auto_Fully_SharkMan_Karate or _G.Teleport_to_Player or _G.Auto_Kill_Player_Melee or _G.Auto_Kill_Player_Gun or _G.Start_Tween_Island or _G.AutoObservationHakiV2 or _G.d or _G.Auto_Next_Island or _G.Auto_Farm_Sword or _G.MeleeFarm or _G.Auto_Kill_Law then
 				for _, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
 					if v:IsA("BasePart") then
 						v.CanCollide = false    
@@ -5812,6 +5812,53 @@ Main:Seperator(" Farm ")
 
 
 
+spawn(function()
+    while wait() do
+        if _G.killplayertrain then
+-- Lấy danh sách tất cả người chơi trong trò chơi
+if not game.Players.LocalPlayer.Character:FindFirstChild("HasBuso") then
+  local args = {
+   [1] = "Buso"
+  }
+  game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+  end
+EquipWeapon(_G.Select_Weapon)
+if game.Players.LocalPlayer.Character.Humanoid.Health >= 5000 then
+local players = game:GetService("Players"):GetPlayers()
+
+-- Người chơi mà bạn muốn di chuyển đến
+local targetPlayer = nil
+local minDistance = 400
+
+-- Lấy người chơi gần nhất
+local closestDistance = math.huge
+for _, player in pairs(players) do
+    if player ~= game.Players.LocalPlayer then -- Loại bỏ người chơi hiện tại (bạn)
+        local distance = (player.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+        if distance < closestDistance then
+            closestDistance = distance
+            targetPlayer = player
+        end
+end
+end
+
+
+-- Kiểm tra nếu có người chơi gần nhất và khoảng cách nhỏ hơn 200
+if targetPlayer and closestDistance < minDistance then
+    -- Di chuyển người chơi hiện tại đến người chơi gần nhất
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = targetPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0, 5, 0) -- Điều chỉnh vector (0, 5, 0) để tránh va chạm
+else
+    print("Không có người chơi gần nhất trong khoảng cách 200 part.")
+end
+end
+end
+end
+end)
+
+
+
+
+
 Main:Dropdown("Chọn Chế Độ Farm", {
  "Farm Theo Lever","Farm speed","Farm Không Nhiệm Vụ","Farm Gần nhất"
 },function(value)
@@ -5857,8 +5904,6 @@ if World2 then
  --_G.Auto_Third_World = value
 -- StopTween(_G.Auto_Third_World)
 -- end)
-
-Main:Seperator("Chất Kì Dị")
 
 Main:Toggle("Auto Farm Chất Kì Dị ",_G.Auto_Farm_Ectoplasm,function(value)
  _G.Auto_Farm_Ectoplasm = value
@@ -6634,7 +6679,8 @@ spawn(function()
     end
 end)
 end
- if World3 then
+
+if World3 then
 	Main:Seperator(" Katakuri Boss ")
 local  Mob_Kill_Cake_Prince  = Main:Label("Total")
 Main:Toggle( "Spawm Katakuri + Check Katakuri" ,_G.Auto_Cake_Pr1ince,function(value)
@@ -6672,6 +6718,7 @@ _G.Auto_Open_Dough_Dungeon = value
 _G.click = value
 StopTween(_G.Auto_Open_Dough_Dungeon)
 end)
+end
 	
 	spawn(function()
 	game:GetService("RunService").Heartbeat:Connect(function()
@@ -6756,7 +6803,8 @@ end)
 			end
 		end
 	end)
-	end
+	
+	
 	
 	
 	
@@ -7062,6 +7110,9 @@ Main:Toggle("Farm Thuốc Súng + Sắt Vụn + Da",_G.thuocsung,function(val
 end)
 end
 
+
+
+
 spawn(function()
  game:GetService("RunService").Heartbeat:Connect(function()
   pcall(function()
@@ -7123,6 +7174,362 @@ spawn(function()
  end
  end)
 
+
+
+
+if World2 then
+Main:Toggle("Farm Nước Mắt Thần Bí",_G.nuocmat,function(value)
+ _G.nuocmat = value
+ _G.click = value
+ StopTween(_G.nuocmat)
+end)
+end
+
+spawn(function()
+ game:GetService("RunService").Heartbeat:Connect(function()
+  pcall(function()
+   for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+   if _G.nuocmat and StartMagnetBoneMon0 and (v.Name == "Sea Soldier [Lv. 1425]" or v.Name == "Water Fighter [Lv. 1450]" ) and (v.HumanoidRootPart.Position - PosMonBone.Position).magnitude <= 350 then
+   v.HumanoidRootPart.CFrame = PosMonBone
+   v.HumanoidRootPart.CanCollide = false
+   v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+   if v.Humanoid:FindFirstChild("Animator") then
+   v.Humanoid.Animator:Destroy()
+   end
+   sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+   end
+   end
+   end)
+  end)
+end)
+
+
+
+
+
+
+spawn(function()
+ while wait() do
+ if _G.nuocmat and World2 then
+ pcall(function()
+  if game:GetService("Workspace").Enemies:FindFirstChild("Sea Soldier [Lv. 1425]") or game:GetService("Workspace").Enemies:FindFirstChild("Water Fighter [Lv. 1450]")  then
+  for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+  if v.Name == "Sea Soldier [Lv. 1425]" or v.Name == "Water Fighter [Lv. 1450]" then
+  if v.Humanoid.Health > 0 then
+  repeat wait()
+  AutoHaki()
+  EquipWeapon(_G.Select_Weapon)
+  StartMagnetBoneMon0 = true
+  v.HumanoidRootPart.CanCollide = false
+  v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
+  PosMonBone = v.HumanoidRootPart.CFrame
+  topos(v.HumanoidRootPart.CFrame * MethodFarm)
+  game:GetService'VirtualUser':CaptureController()
+  game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+  until _G.nuocmat == false or not v.Parent or v.Humanoid.Health <= 0
+  end
+  end
+  end
+  else
+   StartMagnetBoneMon0 = false
+  for i,v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
+  if v.Name == "Sea Soldier [Lv. 1425]" then
+  topos(v.HumanoidRootPart.CFrame * MethodFarm)
+  elseif v.Name == "Water Fighter [Lv. 1450]" then
+  topos(v.HumanoidRootPart.CFrame * MethodFarm)
+  end
+  end
+  topos(CFrame.new(-3453.16968, 220.563583, -10075.1094, -0.330088317, -0.0376721062, -0.943198025, 1.99885108e-07, 0.999203265, -0.0399090722, 0.943950057, -0.0131737087, -0.329825401))
+  end
+  end)
+ end
+ end
+end)
+
+
+
+if World2 then
+Main:Toggle("Farm Quặng Nham Thạch",_G.magma,function(value)
+ _G.magma = value
+ _G.click = value
+ StopTween(_G.magma)
+end)
+end
+
+spawn(function()
+ game:GetService("RunService").Heartbeat:Connect(function()
+  pcall(function()
+   for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+   if _G.magma and StartMagnetBoneMon0 and (v.Name == "Lava Pirate [Lv. 1200]" or v.Name == "Magma Ninja [Lv. 1175]" ) and (v.HumanoidRootPart.Position - PosMonBone.Position).magnitude <= 350 then
+   v.HumanoidRootPart.CFrame = PosMonBone
+   v.HumanoidRootPart.CanCollide = false
+   v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+   if v.Humanoid:FindFirstChild("Animator") then
+   v.Humanoid.Animator:Destroy()
+   end
+   sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+   end
+   end
+   end)
+  end)
+end)
+
+
+
+
+
+
+spawn(function()
+ while wait() do
+ if _G.magma and World2 then
+ pcall(function()
+  if game:GetService("Workspace").Enemies:FindFirstChild("Lava Pirate [Lv. 1200]") or game:GetService("Workspace").Enemies:FindFirstChild("Magma Ninja [Lv. 1175]")  then
+  for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+  if v.Name == "Lava Pirate [Lv. 1200]" or v.Name == "Magma Ninja [Lv. 1175]" then
+  if v.Humanoid.Health > 0 then
+  repeat wait()
+  AutoHaki()
+  EquipWeapon(_G.Select_Weapon)
+  StartMagnetBoneMon0 = true
+  v.HumanoidRootPart.CanCollide = false
+  v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
+  PosMonBone = v.HumanoidRootPart.CFrame
+  topos(v.HumanoidRootPart.CFrame * MethodFarm)
+  game:GetService'VirtualUser':CaptureController()
+  game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+  until _G.magma == false or not v.Parent or v.Humanoid.Health <= 0
+  end
+  end
+  end
+  else
+   StartMagnetBoneMon0 = false
+  for i,v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
+  if v.Name == "Lava Pirate [Lv. 1200]" then
+  topos(v.HumanoidRootPart.CFrame * MethodFarm)
+  elseif v.Name == "Magma Ninja [Lv. 1175]" then
+  topos(v.HumanoidRootPart.CFrame * MethodFarm)
+  end
+  end
+  topos(CFrame.new(-5468.05127, 88.8360977, -5257.60352, -0.309589148, 0.341049701, -0.887603343, -3.83708721e-06, 0.933463514, 0.358672142, 0.950870454, 0.111044422, -0.288988858))
+  end
+  end)
+ end
+ end
+end)
+
+if World2 then
+Main:Toggle("Farm Chất Kì Dị ",_G.Auto_Farm_Ectoplasm,function(value)
+ _G.Auto_Farm_Ectoplasm = value
+ StopTween(_G.Auto_Farm_Ectoplasm)
+end)
+end
+
+if World2 then
+Main:Toggle("Farm Răng Nanh",_G.rangnanh,function(value)
+ _G.rangnanh = value
+ _G.click = value
+ StopTween(_G.rangnanh)
+end)
+end
+
+
+spawn(function()
+ game:GetService("RunService").Heartbeat:Connect(function()
+  pcall(function()
+   for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+   if _G.rangnanh and StartMagnetBoneMon0 and (v.Name == "Vampire [Lv. 975]") and (v.HumanoidRootPart.Position - PosMonBone.Position).magnitude <= 350 then
+   v.HumanoidRootPart.CFrame = PosMonBone
+   v.HumanoidRootPart.CanCollide = false
+   v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+   if v.Humanoid:FindFirstChild("Animator") then
+   v.Humanoid.Animator:Destroy()
+   end
+   sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+   end
+   end
+   end)
+  end)
+end)
+
+
+
+
+
+
+spawn(function()
+ while wait() do
+ if _G.rangnanh and World2 then
+ pcall(function()
+  if game:GetService("Workspace").Enemies:FindFirstChild("Vampire [Lv. 975]")  then
+  for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+  if v.Name == "Vampire [Lv. 975]" then
+  if v.Humanoid.Health > 0 then
+  repeat wait()
+  AutoHaki()
+  EquipWeapon(_G.Select_Weapon)
+  StartMagnetBoneMon0 = true
+  v.HumanoidRootPart.CanCollide = false
+  v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
+  PosMonBone = v.HumanoidRootPart.CFrame
+  topos(v.HumanoidRootPart.CFrame * MethodFarm)
+  game:GetService'VirtualUser':CaptureController()
+  game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+  until _G.rangnanh == false or not v.Parent or v.Humanoid.Health <= 0
+  end
+  end
+  end
+  else
+   StartMagnetBoneMon0 = false
+  for i,v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
+  if v.Name == "Vampire [Lv. 975]" then
+  topos(v.HumanoidRootPart.CFrame * MethodFarm)
+  end
+  end
+  topos(CFrame.new(-6024.91162, 8.08108234, -1333.36536, 0.757470608, -0.230375275, 0.610872746, 0.0393686853, 0.950088799, 0.309485704, -0.651681185, -0.210377052, 0.728733957))
+  end
+  end)
+ end
+ end
+end)
+
+if World2 then
+Main:Toggle("Farm Chất Phóng Xạ ",_G.chatpong,function(value)
+ _G.chatpong = value
+ _G.click = value
+ StopTween(_G.chatpong)
+end)
+end
+
+
+spawn(function()
+ game:GetService("RunService").Heartbeat:Connect(function()
+  pcall(function()
+   for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+   if _G.chatpong and StartMagnetBoneMon0 and (v.Name == "Factory Staff [Lv. 800]") and (v.HumanoidRootPart.Position - PosMonBone.Position).magnitude <= 350 then
+   v.HumanoidRootPart.CFrame = PosMonBone
+   v.HumanoidRootPart.CanCollide = false
+   v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+   if v.Humanoid:FindFirstChild("Animator") then
+   v.Humanoid.Animator:Destroy()
+   end
+   sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+   end
+   end
+   end)
+  end)
+end)
+
+
+
+
+
+
+spawn(function()
+ while wait() do
+ if _G.chatpong and World2 then
+ pcall(function()
+  if game:GetService("Workspace").Enemies:FindFirstChild("Factory Staff [Lv. 800]")  then
+  for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+  if v.Name == "Factory Staff [Lv. 800]" then
+  if v.Humanoid.Health > 0 then
+  repeat wait()
+  AutoHaki()
+  EquipWeapon(_G.Select_Weapon)
+  StartMagnetBoneMon0 = true
+  v.HumanoidRootPart.CanCollide = false
+  v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
+  PosMonBone = v.HumanoidRootPart.CFrame
+  topos(v.HumanoidRootPart.CFrame * MethodFarm)
+  game:GetService'VirtualUser':CaptureController()
+  game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+  until _G.chatpong == false or not v.Parent or v.Humanoid.Health <= 0
+  end
+  end
+  end
+  else
+   StartMagnetBoneMon0 = false
+  for i,v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
+  if v.Name == "Factory Staff [Lv. 800]" then
+  topos(v.HumanoidRootPart.CFrame * MethodFarm)
+  end
+  end
+  topos(CFrame.new(120.758049, 230.459641, 44.9202576, -0.649630189, -0.0354530364, 0.759423316, 0.0171204768, 0.997976601, 0.0612350255, -0.760057569, 0.0527818501, -0.647708774))
+  end
+  end)
+ end
+ end
+end)
+
+
+
+
+
+if World2 then
+Main:Toggle("Farm Sắt Vụn + Da ",_G.shinap,function(value)
+ _G.shinapo = value
+ _G.click = value
+ StopTween(_G.shinap)
+end)
+end
+
+spawn(function()
+ game:GetService("RunService").Heartbeat:Connect(function()
+  pcall(function()
+   for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+   if _G.shinapo and StartMagnetBoneMon0 and (v.Name == "Mercenary [Lv. 725]") and (v.HumanoidRootPart.Position - PosMonBone.Position).magnitude <= 350 then
+   v.HumanoidRootPart.CFrame = PosMonBone
+   v.HumanoidRootPart.CanCollide = false
+   v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+   if v.Humanoid:FindFirstChild("Animator") then
+   v.Humanoid.Animator:Destroy()
+   end
+   sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+   end
+   end
+   end)
+  end)
+end)
+
+
+
+
+
+
+spawn(function()
+ while wait() do
+ if _G.shinapo and World2 then
+ pcall(function()
+  if game:GetService("Workspace").Enemies:FindFirstChild("Mercenary [Lv. 725]")  then
+  for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+  if v.Name == "Mercenary [Lv. 725]" then
+  if v.Humanoid.Health > 0 then
+  repeat wait()
+  AutoHaki()
+  EquipWeapon(_G.Select_Weapon)
+  StartMagnetBoneMon0 = true
+  v.HumanoidRootPart.CanCollide = false
+  v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
+  PosMonBone = v.HumanoidRootPart.CFrame
+  topos(v.HumanoidRootPart.CFrame * MethodFarm)
+  game:GetService'VirtualUser':CaptureController()
+  game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+  until _G.shinapo == false or not v.Parent or v.Humanoid.Health <= 0
+  end
+  end
+  end
+  else
+   StartMagnetBoneMon0 = false
+  for i,v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
+  if v.Name == "Mercenary [Lv. 725]" then
+  topos(v.HumanoidRootPart.CFrame * MethodFarm)
+  end
+  end
+  topos(CFrame.new(-1022.05206, 106.999367, 1339.79431, -0.949959159, 0.050269112, -0.308302581, 0.0442627147, 0.998669744, 0.0264495909, 0.309222162, 0.0114797652, -0.950920582))
+  end
+  end)
+ end
+ end
+end)
 
 Weapon:Seperator("SeaBeasts")
 Weapon:Toggle("Tự Động Đánh Sea Beasts",_G.SeaBeasts1,function(value)
@@ -10131,10 +10538,13 @@ for _,v in next, workspace:GetDescendants() do
     end
 end)
  
- 
-  
-  Race:Seperator("Auto Win Ải V4")
-  Race:Toggle("Win Ải All Tộc ( No Cá )",_G.winv4,function(value)
+ Race:Seperator("Auto Win Ải V4")
+  Race:Toggle("Kill Player Ải",_G.killplayertrain,function(value)
+ _G.killplayertrain = value
+ _G.click = value
+ StopTween(_G.killplayertrain)
+ end)
+  Race:Toggle("Win Ải All Tộc",_G.winv4,function(value)
  _G.winv4 = value
  StopTween(_G.winv4)
 end)
