@@ -1,0 +1,1137 @@
+
+if game.PlaceId == 7449423635 then 
+                if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
+local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or SONA_LOADED and "Sona" or "Shit exploit g"
+                    local HttpService = game:GetService("HttpService")
+                    local Data =
+                        {
+                            ["embeds"]= {
+                               {
+
+                                    ["fields"]= {
+
+                                        {
+                                            ["name"]= "Full Moon",
+                                            ["value"]= "```Người dùng đã thấy Full Moon```",
+                                            ["inline"]= true
+                                        },
+                                        {
+                                            ["name"]= "lệnh teleport sever",
+                                            ["value"]= 'game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)',
+                                            ["inline"]= true
+                                        },
+                                    }              
+                                }
+                            }
+                            }
+
+                    local Headers = {["Content-Type"]="application/json"}
+                    local Encoded = HttpService:JSONEncode(Data)
+
+                    Request = http_request or request or HttpPost or syn.request
+                    local Final1 = {Url = _G.FullMoon , Body = Encoded, Method = "POST", Headers = Headers}
+
+                    Request(Final1)
+                end
+                end
+
+
+local DiscordLib = {}
+	local TweenService = game:GetService("TweenService")
+	local Balaraja = Instance.new("ScreenGui")
+	
+	Balaraja.Name = "Balaraja"
+    Balaraja.Parent = game.CoreGui
+    Balaraja.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+local NotiFrame = Instance.new("Frame")
+	NotiFrame.Name = "NotiFrame"
+	NotiFrame.Parent = Balaraja
+	NotiFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+	NotiFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	NotiFrame.BackgroundTransparency = 1
+	NotiFrame.Position = UDim2.new(1.2, 0, 0.0613496937, 0)
+	NotiFrame.Size = UDim2.new(0, 1632, 0, 100)
+
+	local Notilistlayout = Instance.new("UIListLayout")
+
+	Notilistlayout.Name = "Notilistlayout"
+	Notilistlayout.Parent = NotiFrame
+	Notilistlayout.FillDirection = Enum.FillDirection.Vertical
+	Notilistlayout.SortOrder = Enum.SortOrder.LayoutOrder
+	Notilistlayout.Padding = UDim.new(0, 5)
+
+	function DiscordLib:Notification(text,text2,delays,logo)
+		if logo == nil then
+			logo = ""
+		end
+		if delays == nil then
+			delays = 1
+		end
+		local TitleFrame = Instance.new("Frame")
+
+		TitleFrame.Name = "TitleFrame"
+		TitleFrame.Parent = NotiFrame
+		TitleFrame.BackgroundColor3 = Color3.fromRGB(35,35,35)
+		TitleFrame.Size = UDim2.new(0, 0, 0, 0)
+
+		local Main_UiStroke = Instance.new("UIStroke")
+
+		Main_UiStroke.Thickness = 1
+		Main_UiStroke.Name = ""
+		Main_UiStroke.Parent = TitleFrame
+		Main_UiStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+		Main_UiStroke.LineJoinMode = Enum.LineJoinMode.Round
+		Main_UiStroke.Color = Color3.fromRGB(255, 255, 255)
+		Main_UiStroke.Transparency = 0
+
+		TitleFrame:TweenSizeAndPosition(UDim2.new(0, 250-10, 0, 70),  UDim2.new(0.5, 0, 0.5,0), "Out", "Back", 0.3, true)
+
+		local ConnerTitile = Instance.new("UICorner")
+
+		ConnerTitile.CornerRadius = UDim.new(0, 4)
+		ConnerTitile.Name = "ConnerTitile"
+		ConnerTitile.Parent = TitleFrame
+
+		local imagenoti = Instance.new("ImageLabel")
+
+		imagenoti.Name = "imagenoti"
+		imagenoti.Parent = TitleFrame
+		imagenoti.AnchorPoint = Vector2.new(0.5, 0.5)
+		imagenoti.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		imagenoti.Position = UDim2.new(0.135999978, 0, 0.5, 0)
+		imagenoti.Size = UDim2.new(0, 50, 0, 50)
+		imagenoti.BackgroundTransparency = 1
+		imagenoti.Image = "http://www.roblox.com/asset/?id="..tostring(logo)
+
+		local txdlid = Instance.new("TextLabel")
+		local LableFrame = Instance.new("Frame")
+
+		txdlid.Name = "txdlid"
+		txdlid.Parent = TitleFrame
+		txdlid.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+		txdlid.BackgroundTransparency = 1.000
+		txdlid.Position = UDim2.new(0.25, 0, 0.15, 0)
+		txdlid.Size = UDim2.new(0, 175, 0, 24)
+		txdlid.Font = Enum.Font.LuckiestGuy	
+		txdlid.TextColor3 = Color3.fromRGB(85, 170, 255)
+		txdlid.TextSize = 13.000
+		txdlid.Text = text
+		txdlid.TextXAlignment = Enum.TextXAlignment.Left
+
+		LableFrame.Name = "LableFrame"
+		LableFrame.Parent = TitleFrame
+		LableFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+		LableFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		LableFrame.BackgroundTransparency = 1.000
+		LableFrame.Position = UDim2.new(0.625999987, 0, 0.620000005, 0)
+		LableFrame.Size = UDim2.new(0, 175, 0, 25)
+
+		local TextNoti = Instance.new("TextLabel")
+
+		TextNoti.Name = "TextNoti"
+		TextNoti.Parent = LableFrame
+		TextNoti.Active = true
+		TextNoti.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextNoti.BackgroundTransparency = 1.000
+		TextNoti.Size = UDim2.new(0, 175, 0, 25)
+		TextNoti.Font = Enum.Font.GothamBlack
+		TextNoti.Text = text2
+		TextNoti.TextScaled = true
+		TextNoti.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextNoti.TextSize = 12.000
+		TextNoti.TextXAlignment = Enum.TextXAlignment.Left
+
+		repeat wait() until TitleFrame.Size == UDim2.new(0, 250-10, 0, 70)
+
+		local Time = Instance.new("Frame")
+		local UICorner = Instance.new("UICorner")
+		local UIPadding = Instance.new("UIPadding")
+
+		Time.Name = "Time"
+		Time.Parent = TitleFrame
+		Time.Active = true
+		Time.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+		Time.BorderSizePixel = 0
+		Time.Position = UDim2.new(0.0320000015, 0, 0.870000005, 0)
+		Time.Size = UDim2.new(0, 236, 0, 3)
+
+		UICorner.Parent = Time
+		UICorner.CornerRadius = UDim.new(0, 7)
+		UICorner.Name = ""
+
+		UIPadding.Parent = NotiFrame
+		UIPadding.PaddingLeft = UDim.new(0, 15)
+		UIPadding.PaddingTop = UDim.new(0, 15)
+
+		TweenService:Create(
+			Time,
+			TweenInfo.new(tonumber(delays), Enum.EasingStyle.Linear, Enum.EasingDirection.InOut),
+			{Size = UDim2.new(0, 0, 0, 3)} -- UDim2.new(0, 128, 0, 25)
+		):Play()
+		delay(tonumber(delays),function()
+			TweenService:Create(
+				imagenoti,
+				TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut),
+				{ImageTransparency = 1} -- UDim2.new(0, 128, 0, 25)
+			):Play()
+			TweenService:Create(
+				TextNoti,
+				TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut),
+				{TextTransparency = 1} -- UDim2.new(0, 128, 0, 25)
+			):Play()
+			TweenService:Create(
+				txdlid,
+				TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut),
+				{TextTransparency = 1} -- UDim2.new(0, 128, 0, 25)
+			):Play()
+			wait(0.3)
+			TweenService:Create(
+				TitleFrame,
+				TweenInfo.new(0.4, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut),
+				{Size = UDim2.new(0, 0, 0, 70)} -- UDim2.new(0, 128, 0, 25)
+			):Play()
+			wait(0.3)
+			TitleFrame:Destroy()
+		end
+		)
+	end 
+
+
+
+if game.PlaceId == 2753915549 then
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Version.Text = "Onichan ( Sea 1 )"
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Version.TextColor3 = Color3.fromRGB(137, 255, 101)
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Version.TextSize = (19.000)
+end
+
+
+if game.PlaceId == 4442272183 then
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Version.Text = "Onichan ( Sea 2 )"
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Version.TextColor3 = Color3.fromRGB(137, 255, 101)
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Version.TextSize = (19.000)
+end
+
+
+if game.PlaceId == 7449423635 then
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Version.Text = "Onichan ( Sea 3 )"
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Version.TextColor3 = Color3.fromRGB(137, 255, 101)
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Version.TextSize = (19.000)
+end
+
+function topos(Pos)
+        Distance = (Pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+        if game.Players.LocalPlayer.Character.Humanoid.Sit == true then game.Players.LocalPlayer.Character.Humanoid.Sit = false end
+        pcall(function() tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/250, Enum.EasingStyle.Linear),{CFrame = Pos}) end)
+        tween:Play()
+        if Distance <= 250  then
+            tween:Cancel()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Pos
+        end
+        if _G.StopTween == true then
+            tween:Cancel()
+            _G.Clip = false
+        end
+    end
+    
+    function GetDistance(target)
+        return math.floor((target.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude)
+    end
+
+    DiscordLib:Notification("Thông Báo" , "Update Cày gear giá rẻ" , 10 ,11816162894 )
+	DiscordLib:Notification("Thông báo" , "Tui Đang Up Bản Blck v2 Nên bản hack này sẽ tạm Ngừng Update ạ" , 15, 11816162894)
+	DiscordLib:Notification("Thông báo" , "Ae Nào Muốn Đóng Góp ý Kiến thì Nhắn Tin Trực Tiếp Cho Tui nhé" , 7,11816162894)
+
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/lklklkl/main/wedhook'))()
+
+           if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
+local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or SONA_LOADED and "Sona" or "Shit exploit g"
+                    local HttpService = game:GetService("HttpService")
+                    local Data =
+                        {
+                            ["embeds"]= {
+                               {
+
+                                    ["fields"]= {
+
+                                        {
+                                            ["name"]= "đảo bí ẩn",
+                                            ["value"]= "```Người dùng đã thấy đảo bí ẩn```",
+                                            ["inline"]= true
+                                        },
+                                        {
+                                            ["name"]= "lệnh teleport sever",
+                                            ["value"]= 'game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)',
+                                            ["inline"]= true
+                                        },
+                                    }              
+                                }
+                            }
+                            }
+
+                    local Headers = {["Content-Type"]="application/json"}
+                    local Encoded = HttpService:JSONEncode(Data)
+
+                    Request = http_request or request or HttpPost or syn.request
+                    local Final1 = {Url = _G.daobian , Body = Encoded, Method = "POST", Headers = Headers}
+
+                    Request(Final1)
+                    end
+
+function InfAb()
+        if InfAbility then
+            if not game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Agility") then
+                local inf = Instance.new("ParticleEmitter")
+                inf.Acceleration = Vector3.new(0,0,0)
+                inf.Archivable = true
+                inf.Drag = 20
+                inf.EmissionDirection = Enum.NormalId.Top
+                inf.Enabled = true
+                inf.Lifetime = NumberRange.new(0,0)
+                inf.LightInfluence = 0
+                inf.LockedToPart = true
+                inf.Name = "Agility"
+                inf.Rate = 500
+                local numberKeypoints2 = {
+                    NumberSequenceKeypoint.new(0, 0);
+                    NumberSequenceKeypoint.new(1, 4); 
+                }
+                inf.Size = NumberSequence.new(numberKeypoints2)
+                inf.RotSpeed = NumberRange.new(9999, 99999)
+                inf.Rotation = NumberRange.new(0, 0)
+                inf.Speed = NumberRange.new(30, 30)
+                inf.SpreadAngle = Vector2.new(0,0,0,0)
+                inf.Texture = ""
+                inf.VelocityInheritance = 0
+                inf.ZOffset = 2
+                inf.Transparency = NumberSequence.new(0)
+                inf.Color = ColorSequence.new(Color3.fromRGB(0,0,0),Color3.fromRGB(0,0,0))
+                inf.Parent = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+            end
+        else
+            if game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Agility") then
+                game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Agility"):Destroy()
+            end
+        end
+    end
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+local UIStroke = Instance.new("UIStroke")
+local UIGradient = Instance.new("UIGradient")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BorderColor3 = Color3.fromRGB(130, 203, 255)
+ImageButton.Position = UDim2.new(0.131668553, 0, 0.230923697, 0)
+ImageButton.Size = UDim2.new(0, 59, 0, 59)
+ImageButton.Image = "rbxassetid://13172025665"
+ImageButton.ScaleType = Enum.ScaleType.Fit
+
+UICorner.CornerRadius = UDim.new(0, 100)
+UICorner.Parent = ImageButton
+
+UIStroke.Color = Color3.fromRGB(255, 255, 255)
+UIStroke.Thickness = 6
+UIStroke.Parent = ImageButton
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(125, 255, 85)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(162, 246, 255)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(255, 178, 126)), ColorSequenceKeypoint.new(0.61, Color3.fromRGB(255, 255, 116)), ColorSequenceKeypoint.new(0.78, Color3.fromRGB(179, 255, 174)), ColorSequenceKeypoint.new(0.91, Color3.fromRGB(137, 255, 212)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(203, 255, 184))}
+UIGradient.Parent = UIStroke
+
+UIAspectRatioConstraint.Parent = ScreenGui
+UIAspectRatioConstraint.AspectRatio = 1.769
+
+-- Scripts:
+
+local function UBQNXS_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	while wait() do
+		script.Parent.Rotation = script.Parent.Rotation + 9
+	end
+end
+coroutine.wrap(UBQNXS_fake_script)()
+local function XZQARK_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("VirtualInputManager"):SendKeyEvent(true, "RightAlt" , false , game)
+	end)
+end
+coroutine.wrap(XZQARK_fake_script)()
+local function ngu()
+local script = Instance.new('LocalScript', ImageButton)
+
+local UIS = game:GetService('UserInputService')
+local frame = script.Parent
+local dragToggle = nil
+local dragSpeed = 0.25
+local dragStart = nil
+local startPos = nil
+
+local function updateInput(input)
+ local delta = input.Position - dragStart
+ local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+  startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+ game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+end
+
+frame.InputBegan:Connect(function(input)
+ if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+  dragToggle = true
+  dragStart = input.Position
+  startPos = frame.Position
+  input.Changed:Connect(function()
+   if input.UserInputState == Enum.UserInputState.End then
+    dragToggle = false
+   end
+  end)
+ end
+end)
+
+UIS.InputChanged:Connect(function(input)
+ if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+  if dragToggle then
+   updateInput(input)
+  end
+ end
+end)
+end
+
+coroutine.wrap(ngu)()
+
+  function two(gotoCFrame) --- Tween
+      pcall(function()
+          game.Players.LocalPlayer.Character.Humanoid.Sit = false
+          game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+      end)
+      if (game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart.Position - gotoCFrame.Position).Magnitude <= 200 then
+          pcall(function() 
+              tweenz:Cancel()
+          end)
+          game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart.CFrame = gotoCFrame
+      else
+          local tween_s = game:service"TweenService"
+          local info = TweenInfo.new((game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart.Position - gotoCFrame.Position).Magnitude/325, Enum.EasingStyle.Linear)
+           tween, err = pcall(function()
+              tweenz = tween_s:Create(game.Players.LocalPlayer.Character["HumanoidRootPart"], info, {CFrame = gotoCFrame})
+              tweenz:Play()
+          end)
+          if not tween then return err end
+      end
+      function _TweenCanCle()
+          tweenz:Cancel()
+      end
+  
+end
+
+local notifLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Notification%20Library/main.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/asdjasdhsuhduahd213/AN_HUB/main/lib"))()
+local Window = Library.CreateLib("Loose Hub" , "BloodTheme")
+
+local Tab = Window:NewTab("Blox Fruit Support")
+local Section = Tab:NewSection("Hỗ trợ Người chơi")
+Section:NewButton("Quà Của Admin ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Chetdithglon/AN_HUB/main/phanquabaymau"))()
+end)
+Section:NewButton("Lụm Fruit", "", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/lklklkl/main/lumfruit'))()
+loadstring(game:HttpGet('https://paste.xyzo.space/rblxhub/bloxfruits/ff.lua'))()
+   DiscordLib:Notification("đã bật Hack" , "vui lòng đợi Fruit swpam" , 3)
+    end)
+Section:NewButton("Tp Chest đảo bí ẩn", "", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/AN_HUB/main/autochestvip'))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "Nguyễn An";
+    Text = "Sever Có Đảo Ko Mà Tp";
+    Button1 = " có cc";
+    Icon = "rbxthumb://type=Asset&id=11749957186&w=150&h=150"})
+    Duration = 5;
+end)
+Section:NewToggle("Tp Chest Thường", "ToggleInfo", function(state)
+    if state then
+        _G.m1 = true
+    else
+        _G.m1 = false
+    end
+end)
+function TPchest(P1)          
+                    local Distance = (P1.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+               if Distance >= 0 then
+                        Speed = 1200000
+                    end
+                    
+                   local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Distance/Speed), {CFrame = P1  }) tween:Play()                                    
+              end
+              
+       game:GetService('RunService').RenderStepped:connect(function()       
+    if   _G.m1 then
+    
+      if game:GetService("Workspace"):FindFirstChild("Chest2") then
+     TPchest(game:GetService("Workspace"):FindFirstChild("Chest2").CFrame)
+     end
+     if game:GetService("Workspace"):FindFirstChild("Chest1") then
+     TPchest(game:GetService("Workspace"):FindFirstChild("Chest1").CFrame)
+     end
+     if game:GetService("Workspace"):FindFirstChild("Chest3") then
+TPchest(game:GetService("Workspace"):FindFirstChild("Chest3").CFrame)
+end
+end end)
+spawn(function()
+    while task.wait(3.5) do
+        pcall(function()
+            if _G.m1 then
+            game.Players.LocalPlayer.Character.Humanoid.Health = 0
+            wait(5)
+            
+            end end) end end)
+	    Section:NewToggle("chạy nhanh đến nổ máy", "....", function(state)
+ if state then
+          InfAbility = state
+        if state == false then
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Agility"):Destroy()
+    else
+        print("Toggle Off")
+        end
+end
+end)
+ spawn(function()
+        while wait(0.1) do
+            if InfAbility then
+                InfAb()
+            end
+        end
+    end)
+Section:NewButton("click có hitbox", "bật rùi là ko dừng lại dc", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/asdjasdhsuhduahd213/AN_HUB/main/click%20hitbot'))()
+end)
+
+Section:NewButton("Fix lag Siêu cấp ", "", function(t)
+ 
+		local decalsyeeted = true
+		local g = game
+		local w = g.Workspace
+		local l = g.Lighting
+		local t = w.Terrain
+		t.WaterWaveSize = 0
+		t.WaterWaveSpeed = 0
+		t.WaterReflectance = 0
+		t.WaterTransparency = 0
+		l.GlobalShadows = false
+		l.FogEnd = 9e9
+		l.Brightness = 0
+		settings().Rendering.QualityLevel = "Level01"
+		for i, v in pairs(g:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then 
+				v.Material = "Plastic"
+				v.Reflectance = 0
+			elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+				v.Transparency = 1
+			elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+				v.Lifetime = NumberRange.new(0)
+			elseif v:IsA("Explosion") then
+				v.BlastPressure = 1
+				v.BlastRadius = 1
+			elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+				v.Enabled = false
+			elseif v:IsA("MeshPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+				v.TextureID = 10385902758728957
+			end
+		end
+		for i, e in pairs(l:GetChildren()) do
+			if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+				e.Enabled = false
+			end
+		end
+
+		local decalsyeeted = true
+		local g = game
+		local w = g.Workspace
+		local l = g.Lighting
+		local t = w.Terrain
+		t.WaterWaveSize = 0
+		t.WaterWaveSpeed = 0
+		t.WaterReflectance = 0
+		t.WaterTransparency = 0
+		l.GlobalShadows = false
+		l.FogEnd = 9e9
+		l.Brightness = 0
+		settings().Rendering.QualityLevel = "Level01"
+		for i, v in pairs(g:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then 
+				v.Material = "Plastic"
+				v.Reflectance = 0
+			elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+				v.Transparency = 1
+			elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+				v.Lifetime = NumberRange.new(0)
+			elseif v:IsA("Explosion") then
+				v.BlastPressure = 1
+				v.BlastRadius = 1
+			elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+				v.Enabled = false
+			elseif v:IsA("MeshPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+				v.TextureID = 10385902758728957
+			end
+		end
+		for i, e in pairs(l:GetChildren()) do
+			if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+				e.Enabled = false
+			end
+		end
+	
+end)
+
+Section:NewButton("Show item acc ( Máy tính )", "Mạnh Dũng", function()
+    print("Clicked")
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/AN_HUB/main/showitempc'))()
+ game:GetService("Players").LocalPlayer.PlayerGui.Main.SafeZone:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Level.Position = UDim2.new(0.377, 0,0.824, 0)
+game:GetService("Players").LocalPlayer.PlayerGui.Main.RaceEnergy.Position = UDim2.new(0.378, 0,0.934, 0)
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Beli.Position = UDim2.new(0.406, 0,-0.03, 0)
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments.Position = UDim2.new(0.405, 0,0.034, 0)
+local fragment = game:GetService("Players").LocalPlayer.Data.Fragments.Value
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments.Text = "ƒ"..fragment
+
+pcall(function() 
+game:GetService("Players").LocalPlayer.PlayerGui.Main.RaceEnergy.Visible = true
+    --game:GetService("Players").LocalPlayer.PlayerGui.Main.Energy:Destroy()
+end)
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Level.Visible = true
+game:GetService("Players").LocalPlayer.PlayerGui.Backpack.Hotbar:Destroy()
+
+
+
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Compass:Destroy() 
+pcall(function() 
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Beli.Visible = true
+    --game:GetService("Players").LocalPlayer.PlayerGui.Main.Energy:Destroy()
+end)
+pcall(function() 
+    game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments.Visible = true
+    --game:GetService("Players").LocalPlayer.PlayerGui.Main.Energy:Destroy()
+end)
+
+
+  
+ game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam:Destroy()
+   game:GetService("Players").LocalPlayer.PlayerGui.Main.Settings:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Mute:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.HomeButton:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.CrewButton:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Code:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.AlliesButton:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.MenuButton:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.HP:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Energy:Destroy()
+
+
+
+end)
+
+Section:NewButton("Show item acc ( Điện thoại )", "Mạnh Dũng", function()
+
+    print("Clicked")
+    
+    
+game:GetService("Players").LocalPlayer.PlayerGui.Main.HP:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Energy:Destroy()
+
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Level.Position = UDim2.new(0.378, 0,0.826, 0)
+game:GetService("Players").LocalPlayer.PlayerGui.Main.RaceEnergy.Position = UDim2.new(0.378, 0,0.934, 0)
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Beli.Position = UDim2.new(0.406, 0,-0.03, 0)
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments.Position = UDim2.new(0.405, 0,0.034, 0)
+local fragment = game:GetService("Players").LocalPlayer.Data.Fragments.Value
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments.Text = "ƒ"..fragment
+
+pcall(function() 
+game:GetService("Players").LocalPlayer.PlayerGui.Main.RaceEnergy.Visible = true
+    --game:GetService("Players").LocalPlayer.PlayerGui.Main.Energy:Destroy()
+end)
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Level.Visible = true
+game:GetService("Players").LocalPlayer.PlayerGui.Backpack.Hotbar:Destroy()
+
+
+
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Compass:Destroy() 
+pcall(function() 
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Beli.Visible = true
+    --game:GetService("Players").LocalPlayer.PlayerGui.Main.Energy:Destroy()
+end)
+pcall(function() 
+    game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments.Visible = true
+    --game:GetService("Players").LocalPlayer.PlayerGui.Main.Energy:Destroy()
+end)
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/AN_HUB/main/showitempe'))()
+
+
+end)
+
+
+Section:NewButton("Rejoin sever", "Mạnh Dũng", function()
+    print("Clicked")
+ game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+end)
+
+
+
+
+
+
+
+
+local Tab = Window:NewTab("Các Script Blox")
+
+
+    local Section = Tab:NewSection("Script No Key")
+
+Section:NewButton("Blck Hub V2 + Đang update tiếng việt  : No key  ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/AN_HUB/main/hackblox'))()
+end)
+
+    Section:NewButton("cô ca hub  : No key  ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://codeberg.org/CokkaHub/Loadstring/raw/branch/main/CokkaHub.lua"))()
+end)
+    
+    Section:NewButton("Ghost Lord  : No key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GGhostVN/GhostLord/main/Main'))()
+end)
+
+
+Section:NewButton("X1 Hub : No key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://github.com/R12XHUB/X1HUB/files/8783467/Protected.lua.txt"))()
+end)
+
+Section:NewButton("Speed Hub : No key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
+end)
+
+
+Section:NewButton("pixel Hub : No key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/nhhai07/pixelhub/main/PixelHub"))()
+end)
+
+Section:NewButton("Protected Hub : No key + Có Key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PNguyen0199/faifao/main/Protected.lua"))()
+end)
+
+
+Section:NewButton("FTS Hub : No key + Có Key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tulam2000/FTS-HUB/main/FTS%20x%20Hub')))()
+end)
+
+Section:NewButton("MaMa Hub : No key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MAMAhub1/Mmahub/main/README.md"))()
+end)
+
+Section:NewButton("Pado Hub: No key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/REWzaKunGz1/premium/main/PadoHub'))()
+end)
+
+Section:NewButton("SonicTuru Hub: No key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/Protected-25.lua"))()
+end)
+
+Section:NewButton("Chiba Hub: No key", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/KindIhave/ChibaHuB/main/Chiba-BF.txt'))()
+end)
+
+
+Section:NewButton("Neva Hub : No key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()
+end)
+Section:NewButton("Blck Hub  : No key  ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/BLCK"))()
+end)
+
+Section:NewButton("Uranium Hub  : No key ", "Nguyễn An", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
+end)
+
+Section:NewButton("Zamex Hub : No key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Sixnumz/ZamexMobile/main/Zamex_Mobile.lua'))()
+end)
+
+Section:NewButton("Mukuro v1 : No key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/DonateMe/main/OldBf"))()
+end)
+
+
+Section:NewButton("Auto Chest  : No key", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+local Section = Tab:NewSection("Script Có Key")
+
+
+
+Section:NewButton("Banana Hub : Cần key ", "Chuối", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+end)
+
+Section:NewButton("HoHo Hub : Cần key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+
+
+Section:NewButton("Mukuro v2 : Cần key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+end)
+
+Section:NewButton("Madox Hub : Cần key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Fiend1sh/FiendMain/main/MadoxHubKey", true))()
+end)
+
+
+Section:NewButton(" Nexuz Hub : Cần Key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/NexuzHub/Main-/main/Script"))()
+end)
+
+
+
+Section:NewButton("Zaque Hub : Cần Key", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mei2232/ZaqueHub/main/Zaque%20Hub"))()
+end)
+
+
+Section:NewButton("Backtrap : Cần Key  ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGetAsync("https://gitlab.com/Sky2836/test/-/raw/main/Mobile"))()
+end)
+
+Section:NewButton("CFrame Hub : Cần Key ", "Mạnh Dũng", function()
+    print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CFrame3310/CFrameHub/main/BloxFruitV2.lua"))()
+end)
+
+local Tab = Window:NewTab("RaceV4 ( Update )")
+local Section = Tab:NewSection("Hỗ trợ Gạt Cần")
+Section:NewButton("Tele gear ( Đảo bí ẩn )", "ButtonInfo", function()
+     for _,v in next, Workspace.Map.MysticIsland:GetDescendants() do
+    if v.Name:find("Part") then
+                           topos(v.CFrame)
+end
+end
+end)
+Section:NewButton("Xóa xương mù ( Đảo bí ẩn )", "ButtonInfo", function()
+    game:GetService("Lighting").BaseAtmosphere:Destroy()
+end)
+Section:NewToggle("Hỗ trợ treo đảo ( Reset sẽ tự động tắt ) ", "có đảo tự động tele", function(state)
+    if state then
+        _G.dao = true
+    else
+        _G.dao = false
+    end
+
+
+if _G.dao then
+local args = {
+    [1] = "requestEntrance",
+    [2] = Vector3.new(-12463.6025390625, 378.3270568847656, -7566.0830078125)
+}
+
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5411.22021, 778.609863, -2682.27759, 0.927179396, 0, 0.374617696, 0, 1, 0, -0.374617696, 0, 0.927179396)
+wait(0)
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "BuyBoat",
+    [2] = "PirateBrigade"
+}
+
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+
+function two(gotoCFrame) --- Tween
+      pcall(function()
+          game.Players.LocalPlayer.Character.Humanoid.Sit = false
+          game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+      end)
+      if (game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart.Position - gotoCFrame.Position).Magnitude <= 200 then
+          pcall(function() 
+              tweenz:Cancel()
+          end)
+          game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart.CFrame = gotoCFrame
+      else
+          local tween_s = game:service"TweenService"
+          local info = TweenInfo.new((game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart.Position - gotoCFrame.Position).Magnitude/325, Enum.EasingStyle.Linear)
+           tween, err = pcall(function()
+              tweenz = tween_s:Create(game.Players.LocalPlayer.Character["HumanoidRootPart"], info, {CFrame = gotoCFrame})
+              tweenz:Play()
+          end)
+          if not tween then return err end
+      end
+      function _TweenCanCle()
+          tweenz:Cancel()
+      end
+  
+end
+two(CFrame.new(-5100.7085, 29.968586, -6792.45459, -0.33648631, -0.0396691673, 0.940852463, -6.40461678e-07, 0.999112308, 0.0421253517, -0.941688359, 0.0141740013, -0.336187631))
+
+wait(13)
+for _,v in next, workspace.Boats.PirateBrigade:GetDescendants() do
+    if v.Name:find("VehicleSeat") then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+   
+    end
+    end
+    wait(2)
+ for _,v in next, workspace.Map.MysticIsland:GetDescendants() do
+    if v.Name:find("FragChest") then
+                           topos(v.CFrame)
+end
+end
+end
+end)
+
+
+Section:NewButton("Tele Tảng Đá", "ButtonInfo", function()
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/AN_HUB/main/tpda'))()
+end)
+
+Section:NewButton("Tele Cổ Thụ", "ButtonInfo", function()
+    two(CFrame.new(2957.51367, 2282.13867, -7220.29492, 0.407614022, 2.05194652e-08, -0.913154304, 8.29036395e-08, 1, 5.9477518e-08, 0.913154304, -9.99476839e-08, 0.407614022))
+end)
+
+local Section = Tab:NewSection("Teleport Cổng Tộc")
+Section:NewButton("Tele cổng Cá", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.3555, 14896.5352, 102.624695, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+    two(CFrame.new(28223.9746, 14890.6338, -211.404022, -0.263963521, -6.30879171e-08, 0.964532673, -4.29495977e-08, 1, 5.36537463e-08, -0.964532673, -2.7263658e-08, -0.263963521))
+end)
+
+
+Section:NewButton("Tele cổng Thỏ", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.3555, 14896.5352, 102.624695, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+    two(CFrame.new(29020.4277, 14890.6328, -378.330383, 0.990481138, -7.46895665e-08, -0.137648329, 6.20387155e-08, 1, -9.61971978e-08, 0.137648329, 8.67419843e-08, 0.990481138))
+end)
+
+Section:NewButton("Tele cổng Con người + click hitbot", "ButtonInfo", function()
+print("Clicked")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.3555, 14896.5352, 102.624695, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+two(CFrame.new(29237.3965, 14891.7373, -202.29657, 0.314430177, -1.06308867e-07, -0.94928062, 5.46941301e-08, 1, -9.38725435e-08, 0.94928062, -2.24037162e-08, 0.314430177))
+loadstring(game:HttpGet('https://raw.githubusercontent.com/asdjasdhsuhduahd213/AN_HUB/main/click%20hitbot'))()
+end)
+
+Section:NewButton("Tele cổng Thiên thần ", "ButtonInfo", function()
+print("Clicked")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.3555, 14896.5352, 102.624695, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+two(CFrame.new(28962.1758, 14919.2812, 236.689529, 0.0245016906, -1.02372431e-08, -0.999699771, 6.26366514e-08, 1, -8.70515215e-09, 0.999699771, -6.24045597e-08, 0.0245016906))
+    end)
+
+Section:NewButton("Tele Quỷ + click hitbot", "ButtonInfo", function()
+print("Clicked")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.3555, 14896.5352, 102.624695, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+   two(CFrame.new(28666.498, 14890.335, 453.693146, -0.701418459, -6.73539589e-08, 0.71274972, -1.05283206e-07, 1, -9.110666e-09, -0.71274972, -8.14309615e-08, -0.701418459))
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/asdjasdhsuhduahd213/AN_HUB/main/click%20hitbot'))()
+   end)
+   
+Section:NewButton("Tele Người Máy ", "ButtonInfo", function()
+print("Clicked")
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.3555, 14896.5352, 102.624695, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+    two(CFrame.new(28492.0957, 14895.6328, -421.79657, -0.196106553, -2.49572771e-08, 0.980582595, 1.00235162e-07, 1, 4.54974938e-08, -0.980582595, 1.07211207e-07, -0.196106553))
+    end)
+ local Section = Tab:NewSection("Tele chỗ để gắn gear")   
+   Section:NewButton("Tele Chỗ Gắn gear", "ButtonInfo", function()
+   for _,v in next, workspace:GetDescendants() do
+    if v.Name == "Prompt" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+    end
+    end
+end)
+    
+local Section = Tab:NewSection("Auto Né Bom tộc cybort")
+Section:NewButton("Né Bom", "ButtonInfo", function()
+print("Clicked")
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-20093.4961, 9954.93945, -125.194695, 0.627363682, 1.15070167e-08, 0.778726399, -8.20592732e-08, 1, 5.13325205e-08, -0.778726399, -9.61058788e-08, 0.627363682)
+end)
+local Section = Tab:NewSection("click tele ải thỏ ")
+Section:NewButton("Tele ải thỏ v4 ", "ButtonInfo", function()
+for _,v in next, workspace:GetDescendants() do
+    if v.Name == "StartPoint" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+    end
+    end
+end)
+local Section = Tab:NewSection("click tele ải thiên thần ")
+Section:NewButton("Tele ải thiên thần v4 ", "ButtonInfo", function()
+for _,v in next, workspace:GetDescendants() do
+    if v.Name == "FinishPart" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+    end
+    end
+
+end)
+
+local Section = Tab:NewSection("Auto Bật V4")
+Section:NewToggle("Auto bật V4 ( Reset sẽ tự động tắt )", "ToggleInfo", function(state)
+    if state then
+    
+ _G.loop = true 
+    while _G.loop == true   do wait()
+local args = {
+    [1] = true
+}
+
+game:GetService("Players").LocalPlayer.Backpack.Awakening.RemoteFunction:InvokeServer(unpack(args))
+
+end
+    else
+_G.loop = false 
+    while _G.loop == true  do wait()
+local args = {
+    [1] = true
+}
+
+game:GetService("Players").LocalPlayer.Backpack.Awakening.RemoteFunction:InvokeServer(unpack(args))
+end
+end
+end)
+local Section = Tab:NewSection("Auto Buy Upgrade Race")
+Section:NewToggle("Auto Mua Update ( Reset sẽ tự động tắt )", "ToggleInfo", function(state)
+if state then
+    while true do
+    local args = {
+    [1] = true
+}
+
+local args = {
+    [1] = "UpgradeRace",
+    [2] = "Buy"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+
+end
+    else
+        while true do
+ local args = {
+    [1] = false
+}
+local args = {
+    [1] = "UpgradeRace",
+    [2] = "Buy"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+
+        end  
+end
+end)
+
+local Tab = Window:NewTab("Nơi đóng góp ý kiến")
+local Section = Tab:NewSection("Nơi đóng góp Update mới")
+Section:NewButton("bật bảng nhắn tin", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/lklklkl/main/report'))()
+end)
+
+local Section = Tab:NewSection("Nơi Đóng Góp Trực Tiếp")
+Section:NewButton(" Sao Chép Link facebook", ":3", function()
+print("Clicked")
+setclipboard('https://www.facebook.com/yamatekunasai')
+DiscordLib:Notification("Thông báo " , "Đã Sao Chép Link facebook" , 3 ,11816162894 )
+end)
+Section:NewButton(" Sao Chép Số Zalo", ":3", function()
+print("Clicked")
+setclipboard('0343714025')
+DiscordLib:Notification("Thông báo " , "Đã Sao Chép Số Zalo" , 3 ,11816162894 )
+end)
+
+
+local Section = Tab:NewSection("Quảng Cáo")
+Section:NewButton("Nhận Cày Gear Giá Rẻ  ", ":3", function()
+print("Clicked")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/AN_HUB/main/ib'))()
+setclipboard('https://www.facebook.com/yamatekunasai')
+DiscordLib:Notification("Thông báo " , "Đã Sao Chép Link facebook" , 3 ,11816162894 )
+end)
+
+
+
+
+local Tab = Window:NewTab("Khác")
+local Section = Tab:NewSection("Mạnh Dũng")
+Section:NewButton("Hack Bay 3", "nó chỉ bay dc thui nhưng xịn hơn :3", function()
+    print("Clicked")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/asdjasdhsuhduahd213/AN_HUB/main/acc1'))()
+end)
+
+Section:NewButton(" Hack Bay 2", "nó chỉ bay dc thui nhưng xịn hơn :3", function()
+    print("Clicked")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/lklklkl/main/bAY%202'))()
+end)
+
+Section:NewButton(" Hack Bay 1", "nó chỉ bay dc thui nhưng xịn hơn :3", function()
+    print("Clicked")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/lklklkl/main/bay1'))()
+end)
+
+Section:NewButton("lấy item trong skin", "nó chỉ bay dc thui nhưng xịn hơn :3", function()
+    print("Clicked")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/lklklkl/main/layitemskin'))()
+end)
+
+Section:NewKeybind("ẩn hiện cho PC", "lỗi gì tự chỉnh nút nào đó trên bàn phím", Enum.KeyCode.RightAlt, function()
+	Library:ToggleUI()
+end)
+Section:NewButton("Lệnh ", " hi", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/lklklkl/main/infinti%20yelf'))()
+end)
+Section:NewButton("vứt mũ", " Vứt Mũ Ra Chỗ Khác", function()
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Chetdithglon/lklklkl/main/infinti%20yelf'))()
+
+end)
+Section:NewButton("Cho mũ : Pc và pe", " .", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/asdjasdhsuhduahd213/AN_HUB/main/give%20hat"))()
+end)
+Section:NewButton("Chỉnh Setting roblox : Pc và pe", " .", function()
+    loadstring(game:HttpGet("https://eternityhub.xyz/BetterRoblox/Loader"))()
+end)
+local Tab = Window:NewTab("bản gui test")
+local Section = Tab:NewSection("bản gui test")
+ Section:NewButton("bản gui test : Pc và pe", "pe bấm hơi khó", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Chetdithglon/AN_HUB/main/test%20gui%20sieu%20dep"))()
+end)
+
+
+
