@@ -10496,7 +10496,7 @@ end)
 
 Race:Button("Nhặt Gear",function()
     for _,v in next, Workspace.Map.MysticIsland:GetDescendants() do
-    if v.Name:find("Part") then
+    if v.Name:find("Part") and v.ClassName == "MeshPart" then
                            topos(v.CFrame)
 end
 end
@@ -13464,7 +13464,6 @@ spawn(function()
         end)
     end
 end)
-
 
 
 
