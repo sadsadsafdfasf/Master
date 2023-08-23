@@ -559,7 +559,7 @@ local NotiFrame = Instance.new("Frame")
 		end
 		)
 	end 
-	DiscordLib:Notification("Thông Báo" , "Fix Lỗi Nhặt Gear" , 6 ,11816162894 )
+	DiscordLib:Notification("Thông Báo" , "Chào Trí Roblox" , 6 ,11816162894 )
 DiscordLib:Notification("Thông Báo" , "Nhận Cày Thuê" , 6 ,11816162894 )
  DiscordLib:Notification("Thông Báo" , "Link Facebook Ở Phần Setting Nhé" , 6 ,11816162894 )
  
@@ -13472,7 +13472,6 @@ spawn(function()
         end)
     end
 end)
-
 
 
 
