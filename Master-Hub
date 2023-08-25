@@ -1,6 +1,6 @@
 
-if game.Players.LocalPlayer.Name == "kasnevitzsb" then 
-    game.Players.kasnevitzsb:kick("Admin Test Script")
+if game.Players.LocalPlayer.Name == "" then 
+    game.Players.:kick("Admin Test Script")
     end
 
 
