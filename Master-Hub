@@ -1,6 +1,6 @@
 
-if game.Players.LocalPlayer.Name == "tri2167" then 
-    game.Players.tri2167:kick("Bạn Đã Bị Cấm Dùng Script")
+if game.Players.LocalPlayer.Name == "Kasnevitzsb" then 
+    game.Players.Kasnevitzsb:kick("Admin Test Script")
     end
 
 
@@ -13432,7 +13432,6 @@ spawn(function()
 Misc:Button("Tàn Hình",function()
         game:GetService("Players").LocalPlayer.Character.LowerTorso:Destroy()
     end)
-
 
 
 
