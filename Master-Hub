@@ -1,8 +1,7 @@
 
-if game.Players.LocalPlayer.Name == "1" then 
-    game.Players.dan:kick("Admin Test Script")
+if game.Players.LocalPlayer.Name == "kasneb" then 
+    game.Players.kasnesb:kick("Admin Test Script")
     end
-
 
 
 
@@ -129,7 +128,14 @@ end
 
 
 
-
+function TPchest(P1)          
+                    local Distance = (P1.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+               if Distance >= 0 then
+                        Speed = 1200000
+                    end
+                    
+                   local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Distance/Speed), {CFrame = P1  }) tween:Play()                                    
+              end
 
 
 
@@ -5857,7 +5863,31 @@ spawn(function()
  while true do wait(.1)
  UpdateClient1()
  end
- end)
+end)
+
+
+
+
+game:GetService('RunService').RenderStepped:connect(function()           
+     if _G.chestsea3 then
+    if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("God's Chalice") then 
+   _G.chestsea3 = false
+                                 
+    elseif not game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("God's Chalice") then 
+      if game:GetService("Workspace"):FindFirstChild("Chest1") then
+     TPchest( game:GetService("Workspace"):FindFirstChild("Chest1").CFrame)
+     end
+     if game:GetService("Workspace"):FindFirstChild("Chest2") then
+     TPchest( game:GetService("Workspace"):FindFirstChild("Chest2").CFrame)
+     end
+     if game:GetService("Workspace"):FindFirstChild("Chest3") then
+TPchest( game:GetService("Workspace"):FindFirstChild("Chest3").CFrame)
+end
+end
+end
+end)
+
+
 
 Main:Seperator("Select Item Farm")
 local WeaponList = {"Melee","Sword","Fruit"}
@@ -6761,6 +6791,18 @@ end)
 
 
 if World3 then
+    
+Main:Seperator("Chest")    
+    Main:Toggle("Auto Chest ( Có Cúp Tự Dừng )",_G.chestsea3,function(value)
+ _G.chestsea3 = value
+ StopTween(_G.chestsea3)
+end)
+    
+    
+    
+    
+    
+    
 Main:Seperator(" Bones ")
 
 Main:Toggle("Farm Xương",_G.Auto_Farm_Bone,function(value)
@@ -13432,6 +13474,7 @@ spawn(function()
 Misc:Button("Tàn Hình",function()
         game:GetService("Players").LocalPlayer.Character.LowerTorso:Destroy()
     end)
+
 
 
 
