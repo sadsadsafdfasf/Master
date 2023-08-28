@@ -641,10 +641,10 @@ local NotiFrame = Instance.new("Frame")
 		end
 		)
 	end 
-	DiscordLib:Notification("Thông Báo" , "Cần Bán Acc v4 full gear 65/1 Acc Ae nào cần ib nhé" , 6 ,11816162894 )
+	DiscordLib:Notification("Thông Báo" , "Cần Bán Acc v4 full gear 70/1 Acc Ae nào cần ib nhé" , 6 ,11816162894 )
 DiscordLib:Notification("Thông Báo" , "Nhận Cày Thuê" , 6 ,11816162894 )
  DiscordLib:Notification("Thông Báo" , "Link Facebook Ở Phần Setting Nhé" , 6 ,11816162894 )
- 
+  DiscordLib:Notification("Thông Báo" , "Update Auto Chest Sea 2 or Sea 3  có cup hoạc key sẽ dừng" , 6 ,11816162894 )
  local UserInputService = game:GetService("UserInputService")
  local TweenService = game:GetService("TweenService")
  
