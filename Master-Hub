@@ -5886,6 +5886,52 @@ end
 end
 end
 end)
+if game.PlaceId == 7449423635 then -- sea3
+spawn(function()
+    while task.wait(3.5) do
+        pcall(function()
+        if not   game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("God's Chalice") then
+            if _G.chestsea3 then
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,"W",false,game)
+            game.Players.LocalPlayer.Character.Humanoid.Health = 0
+            end
+            wait(5)
+            
+           end end) end end) end
+
+
+
+game:GetService('RunService').RenderStepped:connect(function()           
+     if _G.chestsea2 then
+    if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Fist of Darkness") then 
+   _G.chestsea2 = false
+                                 
+    elseif not game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Fist of Darkness") then 
+      if game:GetService("Workspace"):FindFirstChild("Chest1") then
+     TPchest( game:GetService("Workspace"):FindFirstChild("Chest1").CFrame)
+     end
+     if game:GetService("Workspace"):FindFirstChild("Chest2") then
+     TPchest( game:GetService("Workspace"):FindFirstChild("Chest2").CFrame)
+     end
+     if game:GetService("Workspace"):FindFirstChild("Chest3") then
+TPchest( game:GetService("Workspace"):FindFirstChild("Chest3").CFrame)
+end
+end
+end
+end)
+if game.PlaceId == 7449423635 then -- sea3
+spawn(function()
+    while task.wait(3.5) do
+        pcall(function()
+        if not   game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Fist of Darkness") then
+            if _G.chestsea2 then
+            game:GetService("VirtualInputManager"):SendKeyEvent(true,"W",false,game)
+            game.Players.LocalPlayer.Character.Humanoid.Health = 0
+            end
+            wait(5)
+            
+           end end) end end) end
+
 
 
 
@@ -6797,10 +6843,18 @@ Main:Seperator("Chest")
  _G.chestsea3 = value
  StopTween(_G.chestsea3)
 end)
+end
+
     
     
+    if World2 then
     
-    
+Main:Seperator("Chest")    
+    Main:Toggle("Auto Chest ( Có Key Tự Dừng )",_G.chestsea2,function(value)
+ _G.chestsea2 = value
+ StopTween(_G.chestsea2)
+end)
+    end
     
     
 Main:Seperator(" Bones ")
@@ -6838,7 +6892,6 @@ spawn(function()
         end)
     end
 end)
-end
 
 if World3 then
 	Main:Seperator(" Katakuri Boss ")
@@ -14441,7 +14494,6 @@ end)
 
     
 end)
-
 
 
 
