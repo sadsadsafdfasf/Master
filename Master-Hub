@@ -13531,9 +13531,102 @@ Misc:Button("Tàn Hình",function()
 end)
 Misc:Button("Show acc ( Pc )",function()
         -- Gui to Lua
+
+
+
+
+
+-- Gui to Lua
 -- Version: 3.6
 
 -- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+local UIStroke = Instance.new("UIStroke")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIStroke_2 = Instance.new("UIStroke")
+local UIGradient_2 = Instance.new("UIGradient")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.714958787, 0, 0.784615397, 0)
+TextLabel.Size = UDim2.new(0, 101, 0, 51)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Tên Acc :   "
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 1.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextWrapped = true
+
+UIStroke.Color = Color3.fromRGB(255, 255, 255)
+UIStroke.Parent = TextLabel
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.34, Color3.fromRGB(7, 243, 255)), ColorSequenceKeypoint.new(0.68, Color3.fromRGB(5, 255, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 234, 2))}
+UIGradient.Parent = UIStroke
+
+TextLabel_2.Parent = TextLabel
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.997744143, 0, 0.0196078438, 0)
+TextLabel_2.Size = UDim2.new(0, 130, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = game.Players.LocalPlayer.Name
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 34.000
+TextLabel_2.TextWrapped = true
+
+UIStroke_2.Color = Color3.fromRGB(255, 255, 255)
+UIStroke_2.Parent = TextLabel_2
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(87, 255, 177)), ColorSequenceKeypoint.new(0.34, Color3.fromRGB(26, 244, 255)), ColorSequenceKeypoint.new(0.67, Color3.fromRGB(255, 182, 253)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(246, 255, 66))}
+UIGradient_2.Parent = UIStroke_2
+
+UIAspectRatioConstraint.Parent = ScreenGui
+UIAspectRatioConstraint.AspectRatio = 1.633
+
+-- Scripts:
+
+local function IJSNJU_fake_script() -- UIGradient.LocalScript 
+	local script = Instance.new('LocalScript', UIGradient)
+
+	local TweenService = game:GetService("TweenService")
+	local tweeninfo = TweenInfo.new(4, Enum.EasingStyle.Linear, Enum.EasingDirection.In, -1)
+	local tween = TweenService:Create(script.Parent, tweeninfo, {Rotation = 360})
+	tween:Play()
+end
+coroutine.wrap(IJSNJU_fake_script)()
+local function TWYWG_fake_script() -- UIGradient_2.Script 
+	local script = Instance.new('Script', UIGradient_2)
+
+	local TweenService = game:GetService("TweenService")
+	local tweeninfo = TweenInfo.new(4, Enum.EasingStyle.Linear, Enum.EasingDirection.In, -1)
+	local tween = TweenService:Create(script.Parent, tweeninfo, {Rotation = 360})
+	tween:Play()
+end
+coroutine.wrap(TWYWG_fake_script)()
+
+
+
+
+
+
+
+
+
 
 local click = Instance.new("ScreenGui")
 local TextButton = Instance.new("TextButton")
@@ -13980,14 +14073,6 @@ end
 pcall(function() 
     game:GetService("Players").LocalPlayer.PlayerGui.Main.Compass:Destroy()
 end)
-
-
-
-
-
-
-
-
 
 
 
@@ -14493,7 +14578,6 @@ end)
 
     
 end)
-
 
 
 
