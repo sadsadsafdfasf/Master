@@ -644,7 +644,6 @@ local NotiFrame = Instance.new("Frame")
 	DiscordLib:Notification("Thông Báo" , "Cần Bán Acc v4 full gear 70/1 Acc Ae nào cần ib nhé" , 6 ,11816162894 )
 DiscordLib:Notification("Thông Báo" , "Nhận Cày Thuê" , 6 ,11816162894 )
  DiscordLib:Notification("Thông Báo" , "Link Facebook Ở Phần Setting Nhé" , 6 ,11816162894 )
-  DiscordLib:Notification("Thông Báo" , "Update Auto Chest Sea 2 or Sea 3  có cup hoạc key sẽ dừng" , 6 ,11816162894 )
  local UserInputService = game:GetService("UserInputService")
  local TweenService = game:GetService("TweenService")
  
@@ -5904,6 +5903,7 @@ spawn(function()
 game:GetService('RunService').RenderStepped:connect(function()           
      if _G.chestsea2 then
     if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Fist of Darkness") then 
+        game:GetService("VirtualInputManager"):SendKeyEvent(true,"W",false,game)
    _G.chestsea2 = false
                                  
     elseif not game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Fist of Darkness") then 
@@ -5919,13 +5919,12 @@ end
 end
 end
 end)
-if game.PlaceId == 7449423635 then -- sea3
+if game.PlaceId == 4442272183 then -- sea2
 spawn(function()
     while task.wait(3.5) do
         pcall(function()
         if not   game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Fist of Darkness") then
             if _G.chestsea2 then
-            game:GetService("VirtualInputManager"):SendKeyEvent(true,"W",false,game)
             game.Players.LocalPlayer.Character.Humanoid.Health = 0
             end
             wait(5)
