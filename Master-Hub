@@ -1,6 +1,6 @@
 
-if game.Players.LocalPlayer.Name == "kasneb" then 
-    game.Players.kasnesb:kick("Admin Test Script")
+if game.Players.LocalPlayer.Name == "FEWE634" then 
+    game.Players.FEWE634:kick("Bạn Đã Bị Cấm Dùng hack trong 1h vì k chào admin Kenshiro")
     end
 
 
@@ -14494,7 +14494,6 @@ end)
 
     
 end)
-
 
 
 
