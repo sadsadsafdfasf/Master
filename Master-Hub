@@ -1,6 +1,6 @@
 
-if game.Players.LocalPlayer.Name == "FEWE634" then 
-    game.Players.FEWE634:kick("Bạn Đã Bị Cấm Dùng hack trong 1h vì k chào admin Kenshiro")
+if game.Players.LocalPlayer.Name == "foxgoodboy123" then 
+    game.Players.foxgoodboy123:kick("Bạn Đã Bị kick Vì éo trả 65k cho admin")
     end
 
 
