@@ -14094,11 +14094,6 @@ Misc:Button("Show Acc ( Mobile )",function()
 
 -- Instances:
 
--- Gui to Lua
--- Version: 3.6
-
--- Instances:
-
 local click = Instance.new("ScreenGui")
 local TextButton = Instance.new("TextButton")
 local UIStroke = Instance.new("UIStroke")
@@ -14513,7 +14508,7 @@ function formatNumber(v)
 end
 local thieunang = game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Clone()
 thieunang.Parent = game:GetService("Players").LocalPlayer.PlayerGui.BubbleChat
-thieunang.Position = UDim2.new(0,6,0.85799,0)
+thieunang.Position = UDim2.new(0.00999999999,6,0.835,0)
 local n = formatNumber(game.Players.LocalPlayer.Data.Fragments.Value)
 thieunang.Text = "ƒ"..n
 print("Done")
@@ -14542,30 +14537,7 @@ wait(1)
 
 game:GetService("Players").LocalPlayer.PlayerGui.Main.Level.Position = UDim2.new(0, 10, 0.90299999, 0)
 game:GetService("Players").LocalPlayer.PlayerGui.Main.RaceEnergy.Position = UDim2.new(0, 10, 0.97299999, 0)
-game:GetService("Players").LocalPlayer.PlayerGui.Main.Beli.Position = UDim2.new(0.00999999999, 0, 0.810, 0)
-local fragment = game:GetService("Players").LocalPlayer.Data.Fragments.Value
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Beli.Position = UDim2.new(0.00999999999, 0, 0.765, 0)
 
 
 
