@@ -14092,8 +14092,8 @@ Misc:Button("Show Acc ( Mobile )",function()
 -- Gui to Lua
 -- Version: 3.6
 
--- Instances:
 
+game:GetService("Players").LocalPlayer.PlayerGui.Notifications:Destroy()
 local click = Instance.new("ScreenGui")
 local TextButton = Instance.new("TextButton")
 local UIStroke = Instance.new("UIStroke")
@@ -14390,7 +14390,7 @@ for k,v in pairs(allitem) do
     
      local tvk = Instance.new("UIGridLayout",cac)
     tvk.CellPadding = UDim2.new(.005,0,.0,0)
-    tvk.CellSize =  UDim2.new(0,30,0,30) -- to nhỏ
+    tvk.CellSize =  UDim2.new(0,33,0,33) -- to nhỏ
     tvk.FillDirectionMaxCells = 100
     tvk.FillDirection = Enum.FillDirection.Horizontal
 
@@ -14538,8 +14538,7 @@ wait(1)
 game:GetService("Players").LocalPlayer.PlayerGui.Main.Level.Position = UDim2.new(0, 10, 0.90299999, 0)
 game:GetService("Players").LocalPlayer.PlayerGui.Main.RaceEnergy.Position = UDim2.new(0, 10, 0.97299999, 0)
 game:GetService("Players").LocalPlayer.PlayerGui.Main.Beli.Position = UDim2.new(0.00999999999, 0, 0.765, 0)
-
-
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Destroy()
 
 
 
