@@ -13535,12 +13535,6 @@ Misc:Button("Show acc ( Pc )",function()
 
 
 
-
--- Gui to Lua
--- Version: 3.6
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local TextLabel = Instance.new("TextLabel")
 local UIStroke = Instance.new("UIStroke")
@@ -13790,9 +13784,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.MenuButton:Destroy()
 game:GetService("Players").LocalPlayer.PlayerGui.Main.Level.Position = UDim2.new(0, 10, 0.90299999, 0)
 game:GetService("Players").LocalPlayer.PlayerGui.Main.RaceEnergy.Position = UDim2.new(0, 10, 0.97299999, 0)
 game:GetService("Players").LocalPlayer.PlayerGui.Main.Beli.Position = UDim2.new(0.00999999978, 0, 0.79400003, 0)
-game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments.Position = UDim2.new(0.00999999999, 0,0.846, 0)
-local fragment = game:GetService("Players").LocalPlayer.Data.Fragments.Value
-game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments.Text = "ƒ"..fragment
+
 
 
 game:GetService("Players").LocalPlayer.PlayerGui.Main.Level.Black:Destroy()
@@ -13857,7 +13849,7 @@ local RaityColor =  {
     ["Uncommon"] = Color3.fromRGB(92, 140, 211),
     ["Rare"] =  Color3.fromRGB(140, 82, 255),
     ["Legendary"] = Color3.fromRGB(213, 43, 228) ,
-    ["Mythical"] =  Color3.fromRGB(238, 47, 50)
+    ["Mythical"] =  Color3.fromRGB(238, 47, 50) 
 }
 function GetRaity(color)
     for k,v in pairs(RaityColor) do 
@@ -13906,12 +13898,12 @@ tvk.Padding = UDim.new(0,20)
 
 local Left = Instance.new("Frame",game.Players.LocalPlayer.PlayerGui.BubbleChat)
 Left.BackgroundTransparency = 1
-Left.Size = UDim2.new(.55,0,1,0) 
+Left.Size = UDim2.new(.5,0,1,0) --HÀNG
 tvk.Parent = Left
 
 local Right = Instance.new("Frame",game.Players.LocalPlayer.PlayerGui.BubbleChat)
 Right.BackgroundTransparency = 1
-Right.Size = UDim2.new(.5,0,1,0) 
+Right.Size = UDim2.new(.5,0,1,0)   -- HÀNG FRUIT
 Right.Position = UDim2.new(.62,0,0,0)
 Right.Name = "Right"
 tvk:Clone().Parent = Right
@@ -13919,7 +13911,7 @@ local bucac
 for k,v in pairs(allitem) do 
     local cac = Instance.new("Frame",Left)
     cac.BackgroundTransparency = 1
-    cac.Size = UDim2.new(0.6,0,0,0) 
+    cac.Size = UDim2.new(.62,0,0,0) 
     cac.LayoutOrder = table.find(RaityLevel,k)
     
     
@@ -13931,8 +13923,8 @@ for k,v in pairs(allitem) do
     cac2.LayoutOrder = table.find(RaityLevel,k)
     
      local tvk = Instance.new("UIGridLayout",cac)
-    tvk.CellPadding = UDim2.new(.005,0,.0,0)
-    tvk.CellSize =  UDim2.new(0,56,0,56)
+    tvk.CellPadding = UDim2.new(.005,0,.0) -- KHOẢNG CÁCH NGANG
+    tvk.CellSize =  UDim2.new(0,56,0,56) -- to nhỏ
     tvk.FillDirectionMaxCells = 100
     tvk.FillDirection = Enum.FillDirection.Horizontal
 
@@ -14048,15 +14040,6 @@ rac.Size = UDim2.new(1,0,0.3,0)
 function formatNumber(v)
     return tostring(v):reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
 end
-local thieunang = game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Clone()
-thieunang.Parent = game:GetService("Players").LocalPlayer.PlayerGui.BubbleChat
-thieunang.Position = UDim2.new(0,6,0.85799,0)
-
-print("Done")
-pcall(function() 
-    game:GetService("Players").LocalPlayer.PlayerGui.Main.MenuButton.Visible = true
-    game:GetService("Players").LocalPlayer.PlayerGui.Main.MenuButton:Destroy()
-end)
 pcall(function() 
     game:GetService("Players").LocalPlayer.PlayerGui.Main.HP.Visible = true
     game:GetService("Players").LocalPlayer.PlayerGui.Main.HP:Destroy()
@@ -14073,8 +14056,12 @@ end
 pcall(function() 
     game:GetService("Players").LocalPlayer.PlayerGui.Main.Compass:Destroy()
 end)
-
-
+local thieunang = game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Clone()
+thieunang.Parent = game:GetService("Players").LocalPlayer.PlayerGui.BubbleChat
+thieunang.Position = UDim2.new(0.00999999999,6,0.845,0)
+local n = formatNumber(game.Players.LocalPlayer.Data.Fragments.Value)
+thieunang.Text = "ƒ"..n
+print("Done")
 
 
 
@@ -14555,7 +14542,6 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Destroy()
 
     
 end)
-
 
 
 
