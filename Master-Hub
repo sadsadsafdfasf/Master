@@ -12,7 +12,7 @@ if game.Players.LocalPlayer.Name == "abc" then
 
 
 
-game.Players.LocalPlayer.DisplayName =  "Asura_Kenshiro"
+game.Players.LocalPlayer.DisplayName =  "Asuka_Kenshiro"
 
 
 
