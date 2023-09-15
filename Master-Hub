@@ -1,6 +1,6 @@
 
-if game.Players.LocalPlayer.Name == "abc" then 
-    game.Players.abc:kick("Bạn Đã Bị kick Vì éo trả 65k cho admin")
+if game.Players.LocalPlayer.Name == "vodinhhuyVmax" then 
+    game.Players.vodinhhuyVmax:kick("Admin Asuka Kenshiro Đã Band bạn ")
     end
 
 
@@ -14001,7 +14001,6 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Destroy()
 
     
 end)
-
 
 
 
