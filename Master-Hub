@@ -4230,7 +4230,7 @@ end
 spawn(function()
 	pcall(function()
 		game:GetService("RunService").Stepped:Connect(function()
-		  	if _G.Auto_Farm_Level or _G.Auto_New_World or _G.AutoFarmFruitMastery or _G.thuocsung or _G.sungtegiac or _G.shinapo or _G.chatpong or _G.rangnanh or _G.AutoFarmGunMastery or _G.magma or _G.Auto_Third_World or _G.duoica or _G.Auto_Farm_Chest or _G.TeleportIsland or _G.SeaBeasts1 or _G.vayrong or _G.Auto_Farm_Boss or _G.Autotushita or _G.Auto_Elite_Hunter or _G.Auto_Cake_Prince or _G.Auto_Farm_All_Boss or _G.Auto_Saber or _G.Auto_Pole or _G.Auto_Farm_Scrap_and_Leather or _G.Auto_Farm_Angel_Wing or _G.Auto_Factory_Farm or _G.Auto_Farm_Ectoplasm or _G.Auto_Bartilo_Quest or _G.Auto_Rengoku or _G.Auto_Farm_Radioactive or _G.Auto_Evo_Race_V2 or _G.Auto_Swan_Glasses or _G.Auto_Dragon_Trident or _G.Auto_Soul_Reaper  or _G.Auto_Farm_Bone or _G.Cacao  or _G.nuocmat or _G.Auto_Open_Dough_Dungeon or _G.Auto_Rainbow_Haki or _G.Auto_Musketeer_Hat or _G.Auto_Holy_Torch or _G.Auto_Canvander or _G.d or _G.Auto_Twin_Hook or _G.Auto_Serpent_Bow or _G.AutoFarmMaterial or _G.Auto_Fully_Death_Step or _G.Auto_Fully_SharkMan_Karate or _G.Teleport_to_Player or _G.Auto_Kill_Player_Melee or _G.Auto_Kill_Player_Gun or _G.Start_Tween_Island or _G.Auto_Next_Island or _G.autoraid or AutoNextIsland or _G.Auto_Farm_Sword or _G.MeleeFarm or _G.AutoFarmSelectMonster or _G.AutoFarmKenHakivor or _G.AutoObservationHakiV2  or _G.AutoFactory or _G.Auto_Kill_Law then
+		  	if _G.Auto_Farm_Level or _G.Auto_New_World or _G.AutoFarmFruitMastery or _G.thuocsung or _G.sungtegiac or _G.shinapo or _G.chatpong or _G.rangnanh or _G.AutoFarmGunMastery or _G.magma or _G.Auto_Third_World or _G.duoica or _G.Auto_Farm_Chest or _G.TeleportIsland or _G.SeaBeasts1 or _G.vayrong or _G.Auto_Farm_Boss or _G.Autotushita or _G.Auto_Elite_Hunter or _G.Auto_Cake_Prince or _G.Auto_Farm_All_Boss or _G.Auto_Saber or _G.Auto_Pole or _G.Auto_Farm_Scrap_and_Leather or _G.Auto_Farm_Angel_Wing or _G.Auto_Factory_Farm or _G.Auto_Farm_Ectoplasm or _G.mudautr or _G.Auto_Rengoku or _G.Auto_Farm_Radioactive or _G.Auto_Evo_Race_V2 or _G.Auto_Swan_Glasses or _G.Auto_Dragon_Trident or _G.Auto_Soul_Reaper  or _G.Auto_Farm_Bone or _G.Cacao  or _G.nuocmat or _G.Auto_Open_Dough_Dungeon or _G.Auto_Rainbow_Haki or _G.Auto_Musketeer_Hat or _G.Auto_Holy_Torch or _G.Auto_Canvander or _G.d or _G.Auto_Twin_Hook or _G.Auto_Serpent_Bow or _G.AutoFarmMaterial or _G.Auto_Fully_Death_Step or _G.Auto_Fully_SharkMan_Karate or _G.Teleport_to_Player or _G.Auto_Kill_Player_Melee or _G.Auto_Kill_Player_Gun or _G.Start_Tween_Island or _G.Auto_Next_Island or _G.autoraid or AutoNextIsland or _G.Auto_Farm_Sword or _G.MeleeFarm or _G.AutoFarmSelectMonster or _G.AutoFarmKenHakivor or _G.AutoObservationHakiV2  or _G.AutoFactory or _G.Auto_Kill_Law then
 			 	if not game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyClip") then
 					local Noclip = Instance.new("BodyVelocity")
 					Noclip.Name = "BodyClip"
@@ -4250,7 +4250,7 @@ end)
 spawn(function()
 	pcall(function()
 		game:GetService("RunService").Stepped:Connect(function()
-			if _G.Auto_Farm_Level or _G.Auto_New_World or _G.TeleportIsland or _G.Auto_Third_World or _G.shinapo or _G.rangnanh or _G.chatpong or _G.thuocsung or _G.sungtegiac or _G.Auto_Farm_Chest or _G.duoica or  _G.Auto_Farm_Boss or _G.SeaBeasts1 or _G.vayrong  or _G.AutoFarmGunMastery or _G.Auto_Elite_Hunter or _G.AutoFarmKenHaki or _G.AutoFactory or _G.AutoFarmSelectMonster or _G.Auto_Cake_Prince or _G.Auto_Farm_All_Boss or _G.Auto_Saber or _G.Auto_Pole  or _G.Auto_Factory_Farm or _G.Auto_Farm_Ectoplasm or _G.Auto_Bartilo_Quest or _G.d or _G.Auto_Rengoku or _G.Autotushita or _G.Auto_Farm_Radioactive   or _G.Auto_Evo_Race_V2 or _G.Auto_Swan_Glasses or _G.Auto_Dragon_Trident or _G.Auto_Soul_Reaper or _G.Auto_Farm_Fish_Tail or _G.Cacao or _G.magma or _G.Auto_Farm_Mini_Tusk or _G.nuocmat or _G.Auto_Farm_Magma_Ore or _G.Auto_Farm_Bone or _G.Auto_Open_Dough_Dungeon or _G.Auto_Rainbow_Haki or _G.Auto_Musketeer_Hat or _G.Auto_Holy_Torch or _G.Auto_Canvander or _G.AutoFarmMaterial or _G.autoraid or _G.Auto_Twin_Hook or AutoNextIsland or _G.Auto_Serpent_Bow or _G.Auto_Fully_Death_Step or _G.Auto_Fully_SharkMan_Karate or _G.Teleport_to_Player or _G.Auto_Kill_Player_Melee or _G.Auto_Kill_Player_Gun or _G.Start_Tween_Island or _G.AutoObservationHakiV2 or _G.d or _G.Auto_Next_Island or _G.Auto_Farm_Sword or _G.MeleeFarm or _G.Auto_Kill_Law then
+			if _G.Auto_Farm_Level or _G.Auto_New_World or _G.TeleportIsland or _G.Auto_Third_World or _G.shinapo or _G.rangnanh or _G.chatpong or _G.thuocsung or _G.sungtegiac or _G.Auto_Farm_Chest or _G.duoica or  _G.Auto_Farm_Boss or _G.SeaBeasts1 or _G.vayrong  or _G.AutoFarmGunMastery or _G.Auto_Elite_Hunter or _G.AutoFarmKenHaki or _G.AutoFactory or _G.AutoFarmSelectMonster or _G.Auto_Cake_Prince or _G.Auto_Farm_All_Boss or _G.Auto_Saber or _G.Auto_Pole  or _G.Auto_Factory_Farm or _G.Auto_Farm_Ectoplasm or _G.mudautr or _G.d or _G.Auto_Rengoku or _G.Autotushita or _G.Auto_Farm_Radioactive   or _G.Auto_Evo_Race_V2 or _G.Auto_Swan_Glasses or _G.Auto_Dragon_Trident or _G.Auto_Soul_Reaper or _G.Auto_Farm_Fish_Tail or _G.Cacao or _G.magma or _G.Auto_Farm_Mini_Tusk or _G.nuocmat or _G.Auto_Farm_Magma_Ore or _G.Auto_Farm_Bone or _G.Auto_Open_Dough_Dungeon or _G.Auto_Rainbow_Haki or _G.Auto_Musketeer_Hat or _G.Auto_Holy_Torch or _G.Auto_Canvander or _G.AutoFarmMaterial or _G.autoraid or _G.Auto_Twin_Hook or AutoNextIsland or _G.Auto_Serpent_Bow or _G.Auto_Fully_Death_Step or _G.Auto_Fully_SharkMan_Karate or _G.Teleport_to_Player or _G.Auto_Kill_Player_Melee or _G.Auto_Kill_Player_Gun or _G.Start_Tween_Island or _G.AutoObservationHakiV2 or _G.d or _G.Auto_Next_Island or _G.Auto_Farm_Sword or _G.MeleeFarm or _G.Auto_Kill_Law then
 				for _, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
 					if v:IsA("BasePart") then
 						v.CanCollide = false    
@@ -7743,8 +7743,9 @@ Weapon:Toggle("Đổi Sever Lấy Soul Guitar",false,function(value)
   _G.soulGuitarhop = value    
 end)
 end
+if World3 then
 Weapon:Seperator("Song Kiếm")
-
+end
 
 if World3 then
 Weapon:Toggle("Auto Song Kiếm",_G.songkiem,function(autocdkf)
@@ -8457,25 +8458,125 @@ Weapon:Toggle("Auto Saber",_G.AutoSaber,function(value)
 elseif World2 then
 
 
-Weapon:Toggle("Nhiệm Vụ Qua Sea3",_G.Auto_Bartilo_Quest,function(value)
- _G.Auto_Bartilo_Quest = value
-StopTween(_G.Auto_Bartilo_Quest)
-end)
-
-Weapon:Seperator(" Tộc V2 ")
-
-Weapon:Toggle("Tự động Lấy Tộc v2",_G.Auto_Evo_Race_V2,function(value)
- _G.Auto_Evo_Race_V2 = value
- _G.click = value
-StopTween(_G.Auto_Evo_Race_V2)
-end)
 	
 
-	spawn(function()
+	 Weapon:Toggle("Mũ Đấu Trường + Tộc V2",_G.mudautr,function(value)
+ _G.mudautr = value
+ StopTween(_G.mudautr)
+end)
+
+
+spawn(function()
 		game:GetService("RunService").Heartbeat:Connect(function()
 			pcall(function()
 				for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-					if _G.Auto_Evo_Race_V2 and StartEvoStartMagnet and v.Name == "Swan Pirate [Lv. 775]" and (v.HumanoidRootPart.Position - PosMonEvo.Position).magnitude <= 350 then
+					if _G.mudautr and AutoBartiloBring and v.Name == "Swan Pirate [Lv. 775]" and (v.HumanoidRootPart.Position - PosMonBarto.Position).magnitude <= 350 then
+						v.HumanoidRootPart.CFrame = PosMonBarto
+						v.HumanoidRootPart.CanCollide = false
+						v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+						if v.Humanoid:FindFirstChild("Animator") then
+							v.Humanoid.Animator:Destroy()
+						end
+						sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius",  math.huge)
+					end
+				end
+			end)
+		end)
+	end)
+
+	spawn(function()
+		pcall(function()
+			while wait() do
+				if _G.mudautr then
+					if game:GetService("Players").LocalPlayer.Data.Level.Value >= 800 and game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 0 then
+						if string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Swan Pirates") and string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "50") and game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then 
+							if game:GetService("Workspace").Enemies:FindFirstChild("Swan Pirate [Lv. 775]") then
+								for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+									if v.Name == "Swan Pirate [Lv. 775]" then
+										pcall(function()
+											repeat wait()
+												AutoHaki()
+												EquipWeapon(_G.Select_Weapon)
+												v.HumanoidRootPart.Transparency = 1
+												v.HumanoidRootPart.CanCollide = false
+												v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+												topos(v.HumanoidRootPart.CFrame * MethodFarm)													
+												PosMonBarto =  v.HumanoidRootPart.CFrame
+												game:GetService'VirtualUser':CaptureController()
+												game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+												AutoBartiloBring = true
+											until not v.Parent or v.Humanoid.Health <= 0 or _G.mudautr == false or game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false
+											AutoBartiloBring = false
+										end)
+									end
+								end
+							else
+								repeat topos(CFrame.new(932.624451, 156.106079, 1180.27466, -0.973085582, 4.55137119e-08, -0.230443969, 2.67024713e-08, 1, 8.47491108e-08, 0.230443969, 7.63147128e-08, -0.973085582)) wait() until not _G.mudautr or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(932.624451, 156.106079, 1180.27466, -0.973085582, 4.55137119e-08, -0.230443969, 2.67024713e-08, 1, 8.47491108e-08, 0.230443969, 7.63147128e-08, -0.973085582)).Magnitude <= 10
+							end
+						else
+							repeat topos(CFrame.new(-456.28952, 73.0200958, 299.895966)) wait() until not _G.mudautr or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-456.28952, 73.0200958, 299.895966)).Magnitude <= 10
+							wait(1.1)
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest","BartiloQuest",1)
+						end 
+					elseif game:GetService("Players").LocalPlayer.Data.Level.Value >= 800 and game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 1 then
+						if game:GetService("Workspace").Enemies:FindFirstChild("Jeremy [Lv. 850] [Boss]") then
+							for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+								if v.Name == "Jeremy [Lv. 850] [Boss]" then
+									OldCFrameBartlio = v.HumanoidRootPart.CFrame
+									repeat wait()
+										sethiddenproperty(game:GetService("Players").LocalPlayer, "SimulationRadius", math.huge)
+										AutoHaki()
+										EquipWeapon(_G.Select_Weapon)
+										v.HumanoidRootPart.Transparency = 1
+										v.HumanoidRootPart.CanCollide = false
+										v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+										v.HumanoidRootPart.CFrame = OldCFrameBartlio
+										topos(v.HumanoidRootPart.CFrame * MethodFarm)
+										game:GetService'VirtualUser':CaptureController()
+										game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+										sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
+									until not v.Parent or v.Humanoid.Health <= 0 or _G.mudautr == false
+								end
+							end
+						elseif game:GetService("ReplicatedStorage"):FindFirstChild("Jeremy [Lv. 850] [Boss]") then
+							repeat topos(CFrame.new(-456.28952, 73.0200958, 299.895966)) wait() until not _G.mudautr or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-456.28952, 73.0200958, 299.895966)).Magnitude <= 10
+							wait(1.1)
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo")
+							wait(1)
+							repeat topos(CFrame.new(2099.88159, 448.931, 648.997375)) wait() until not _G.mudautr or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(2099.88159, 448.931, 648.997375)).Magnitude <= 10
+							wait(2)
+						else
+							repeat topos(CFrame.new(2099.88159, 448.931, 648.997375)) wait() until not _G.mudautr or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(2099.88159, 448.931, 648.997375)).Magnitude <= 10
+						end
+					elseif game:GetService("Players").LocalPlayer.Data.Level.Value >= 800 and game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 2 then
+						repeat topos(CFrame.new(-1850.49329, 13.1789551, 1750.89685)) wait() until not _G.mudautr or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1850.49329, 13.1789551, 1750.89685)).Magnitude <= 10
+						wait(1)
+						repeat topos(CFrame.new(-1858.87305, 19.3777466, 1712.01807)) wait() until not _G.mudautr or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1858.87305, 19.3777466, 1712.01807)).Magnitude <= 10
+						wait(1)
+						repeat topos(CFrame.new(-1803.94324, 16.5789185, 1750.89685)) wait() until not _G.mudautr or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1803.94324, 16.5789185, 1750.89685)).Magnitude <= 10
+						wait(1)
+						repeat topos(CFrame.new(-1858.55835, 16.8604317, 1724.79541)) wait() until not _G.mudautr or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1858.55835, 16.8604317, 1724.79541)).Magnitude <= 10
+						wait(1)
+						repeat topos(CFrame.new(-1869.54224, 15.987854, 1681.00659)) wait() until not _G.mudautr or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1869.54224, 15.987854, 1681.00659)).Magnitude <= 10
+						wait(1)
+						repeat topos(CFrame.new(-1800.0979, 16.4978027, 1684.52368)) wait() until not _G.mudautr or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1800.0979, 16.4978027, 1684.52368)).Magnitude <= 10
+						wait(1)
+						repeat topos(CFrame.new(-1819.26343, 14.795166, 1717.90625)) wait() until not _G.mudautr or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1819.26343, 14.795166, 1717.90625)).Magnitude <= 10
+						wait(1)
+						repeat topos(CFrame.new(-1813.51843, 14.8604736, 1724.79541)) wait() until not _G.mudautr or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1813.51843, 14.8604736, 1724.79541)).Magnitude <= 10
+					end
+				end 
+			end
+		end)
+	end)
+
+
+
+spawn(function()
+		game:GetService("RunService").Heartbeat:Connect(function()
+			pcall(function()
+				for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+					if _G.mudautr and StartEvoStartMagnet and v.Name == "Swan Pirate [Lv. 775]" and (v.HumanoidRootPart.Position - PosMonEvo.Position).magnitude <= 350 then
 						v.HumanoidRootPart.CFrame = PosMonEvo
 						v.HumanoidRootPart.CanCollide = false
 						v.HumanoidRootPart.Size = Vector3.new(50,50,50)
@@ -8492,7 +8593,7 @@ end)
 	spawn(function()
 		pcall(function()
 			while wait() do
-				if _G.Auto_Evo_Race_V2 then
+				if _G.mudautr then
 					if not game:GetService("Players").LocalPlayer.Data.Race:FindFirstChild("Evolved") then
 						if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Alchemist","1") == 0 then
 							topos(CFrame.new(-2779.83521, 72.9661407, -3574.02002, -0.730484903, 6.39014104e-08, -0.68292886, 3.59963224e-08, 1, 5.50667032e-08, 0.68292886, 1.56424669e-08, -0.730484903))
@@ -8520,7 +8621,7 @@ end)
 													game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
 													PosMonEvo = v.HumanoidRootPart.CFrame
 													StartEvoStartMagnet = true
-												until game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Flower 3") or not v.Parent or v.Humanoid.Health <= 0 or _G.Auto_Evo_Race_V2 == false
+												until game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Flower 3") or not v.Parent or v.Humanoid.Health <= 0 or _G.mudautr == false
 												StartEvoStartMagnet = false
 											end
 										end
@@ -9537,109 +9638,9 @@ Weapon:Toggle("Tự Động Lấy Haki quan sát V2",_G.AutoObservationHakiV2
 	end)
 	end
 
-	spawn(function()
-		game:GetService("RunService").Heartbeat:Connect(function()
-			pcall(function()
-				for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-					if _G.Auto_Bartilo_Quest and AutoBartiloBring and v.Name == "Swan Pirate [Lv. 775]" and (v.HumanoidRootPart.Position - PosMonBarto.Position).magnitude <= 350 then
-						v.HumanoidRootPart.CFrame = PosMonBarto
-						v.HumanoidRootPart.CanCollide = false
-						v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-						if v.Humanoid:FindFirstChild("Animator") then
-							v.Humanoid.Animator:Destroy()
-						end
-						sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius",  math.huge)
-					end
-				end
-			end)
-		end)
-	end)
 
-	spawn(function()
-		pcall(function()
-			while wait() do
-				if _G.Auto_Bartilo_Quest then
-					if game:GetService("Players").LocalPlayer.Data.Level.Value >= 800 and game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 0 then
-						if string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Swan Pirates") and string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "50") and game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then 
-							if game:GetService("Workspace").Enemies:FindFirstChild("Swan Pirate [Lv. 775]") then
-								for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-									if v.Name == "Swan Pirate [Lv. 775]" then
-										pcall(function()
-											repeat wait()
-												AutoHaki()
-												EquipWeapon(_G.Select_Weapon)
-												v.HumanoidRootPart.Transparency = 1
-												v.HumanoidRootPart.CanCollide = false
-												v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-												topos(v.HumanoidRootPart.CFrame * MethodFarm)													
-												PosMonBarto =  v.HumanoidRootPart.CFrame
-												game:GetService'VirtualUser':CaptureController()
-												game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
-												AutoBartiloBring = true
-											until not v.Parent or v.Humanoid.Health <= 0 or _G.Auto_Bartilo_Quest == false or game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false
-											AutoBartiloBring = false
-										end)
-									end
-								end
-							else
-								repeat topos(CFrame.new(932.624451, 156.106079, 1180.27466, -0.973085582, 4.55137119e-08, -0.230443969, 2.67024713e-08, 1, 8.47491108e-08, 0.230443969, 7.63147128e-08, -0.973085582)) wait() until not _G.Auto_Bartilo_Quest or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(932.624451, 156.106079, 1180.27466, -0.973085582, 4.55137119e-08, -0.230443969, 2.67024713e-08, 1, 8.47491108e-08, 0.230443969, 7.63147128e-08, -0.973085582)).Magnitude <= 10
-							end
-						else
-							repeat topos(CFrame.new(-456.28952, 73.0200958, 299.895966)) wait() until not _G.Auto_Bartilo_Quest or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-456.28952, 73.0200958, 299.895966)).Magnitude <= 10
-							wait(1.1)
-							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest","BartiloQuest",1)
-						end 
-					elseif game:GetService("Players").LocalPlayer.Data.Level.Value >= 800 and game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 1 then
-						if game:GetService("Workspace").Enemies:FindFirstChild("Jeremy [Lv. 850] [Boss]") then
-							for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-								if v.Name == "Jeremy [Lv. 850] [Boss]" then
-									OldCFrameBartlio = v.HumanoidRootPart.CFrame
-									repeat wait()
-										sethiddenproperty(game:GetService("Players").LocalPlayer, "SimulationRadius", math.huge)
-										AutoHaki()
-										EquipWeapon(_G.Select_Weapon)
-										v.HumanoidRootPart.Transparency = 1
-										v.HumanoidRootPart.CanCollide = false
-										v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-										v.HumanoidRootPart.CFrame = OldCFrameBartlio
-										topos(v.HumanoidRootPart.CFrame * MethodFarm)
-										game:GetService'VirtualUser':CaptureController()
-										game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
-										sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
-									until not v.Parent or v.Humanoid.Health <= 0 or _G.Auto_Bartilo_Quest == false
-								end
-							end
-						elseif game:GetService("ReplicatedStorage"):FindFirstChild("Jeremy [Lv. 850] [Boss]") then
-							repeat topos(CFrame.new(-456.28952, 73.0200958, 299.895966)) wait() until not _G.Auto_Bartilo_Quest or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-456.28952, 73.0200958, 299.895966)).Magnitude <= 10
-							wait(1.1)
-							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo")
-							wait(1)
-							repeat topos(CFrame.new(2099.88159, 448.931, 648.997375)) wait() until not _G.Auto_Bartilo_Quest or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(2099.88159, 448.931, 648.997375)).Magnitude <= 10
-							wait(2)
-						else
-							repeat topos(CFrame.new(2099.88159, 448.931, 648.997375)) wait() until not _G.Auto_Bartilo_Quest or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(2099.88159, 448.931, 648.997375)).Magnitude <= 10
-						end
-					elseif game:GetService("Players").LocalPlayer.Data.Level.Value >= 800 and game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 2 then
-						repeat topos(CFrame.new(-1850.49329, 13.1789551, 1750.89685)) wait() until not _G.Auto_Bartilo_Quest or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1850.49329, 13.1789551, 1750.89685)).Magnitude <= 10
-						wait(1)
-						repeat topos(CFrame.new(-1858.87305, 19.3777466, 1712.01807)) wait() until not _G.Auto_Bartilo_Quest or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1858.87305, 19.3777466, 1712.01807)).Magnitude <= 10
-						wait(1)
-						repeat topos(CFrame.new(-1803.94324, 16.5789185, 1750.89685)) wait() until not _G.Auto_Bartilo_Quest or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1803.94324, 16.5789185, 1750.89685)).Magnitude <= 10
-						wait(1)
-						repeat topos(CFrame.new(-1858.55835, 16.8604317, 1724.79541)) wait() until not _G.Auto_Bartilo_Quest or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1858.55835, 16.8604317, 1724.79541)).Magnitude <= 10
-						wait(1)
-						repeat topos(CFrame.new(-1869.54224, 15.987854, 1681.00659)) wait() until not _G.Auto_Bartilo_Quest or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1869.54224, 15.987854, 1681.00659)).Magnitude <= 10
-						wait(1)
-						repeat topos(CFrame.new(-1800.0979, 16.4978027, 1684.52368)) wait() until not _G.Auto_Bartilo_Quest or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1800.0979, 16.4978027, 1684.52368)).Magnitude <= 10
-						wait(1)
-						repeat topos(CFrame.new(-1819.26343, 14.795166, 1717.90625)) wait() until not _G.Auto_Bartilo_Quest or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1819.26343, 14.795166, 1717.90625)).Magnitude <= 10
-						wait(1)
-						repeat topos(CFrame.new(-1813.51843, 14.8604736, 1724.79541)) wait() until not _G.Auto_Bartilo_Quest or (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(-1813.51843, 14.8604736, 1724.79541)).Magnitude <= 10
-					end
-				end 
-			end
-		end)
-	end)
+
+	
 
 if World3 then
 
@@ -14001,7 +14002,6 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Destroy()
 
     
 end)
-
 
 
 
