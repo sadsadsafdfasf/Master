@@ -1,18 +1,18 @@
 
-if game.Players.LocalPlayer.Name == "vodinhhuyVmax" then 
-    game.Players.vodinhhuyVmax:kick("Admin Asuka Kenshiro Đã Band bạn ")
-    end
+--if game.Players.LocalPlayer.Name == "vodinhhuyVmax" then 
+  --  game.Players.vodinhhuyVmax:kick("Admin Asuka Kenshiro Đã Band bạn ")
+   -- end
 
 
 
 
 
 
-local Players = game:GetService("Players")
+--local Players = game:GetService("Players")
 
 -- Hàm được gọi để kiểm tra số lượng người chơi
 
-    local playerCount = #Players:GetPlayers()
+  --  local playerCount = #Players:GetPlayers()
 local FullMoon = ""
 
 spawn(function()
@@ -6515,7 +6515,7 @@ end)
 if World3 then
     
 Main:Seperator("Chest")    
-    Main:Toggle("Auto Chest ( Có Cúp Tự Dừng )",_G.chestsea3,function(value)
+    Main:Toggle("Auto Chest ( 70% Reset Acc )",_G.chestsea3,function(value)
  _G.chestsea3 = value
  StopTween(_G.chestsea3)
 end)
@@ -6526,7 +6526,7 @@ end
     if World2 then
     
 Main:Seperator("Chest")    
-    Main:Toggle("Auto Chest ( Có Key Tự Dừng )",_G.chestsea2,function(value)
+    Main:Toggle("Auto Chest ( 70% Reset Acc )",_G.chestsea2,function(value)
  _G.chestsea2 = value
  StopTween(_G.chestsea2)
 end)
@@ -10683,7 +10683,7 @@ spawn(function()
 end)
 
 
-  P:Toggle("Kill Người Chơi Gần Nhất",_G.killplayertrain,function(value)
+  P:Toggle("Kill Người Chơi Gần Nhất  ( 80% Reset Acc )",_G.killplayertrain,function(value)
  _G.killplayertrain = value
  _G.click = value
  StopTween(_G.killplayertrain)
@@ -14002,7 +14002,6 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Destroy()
 
     
 end)
-
 
 
 
