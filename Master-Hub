@@ -8,11 +8,11 @@
 
 
 
---local Players = game:GetService("Players")
+local Players = game:GetService("Players")
 
 -- Hàm được gọi để kiểm tra số lượng người chơi
 
-  --  local playerCount = #Players:GetPlayers()
+   local playerCount = #Players:GetPlayers()
 local FullMoon = ""
 
 spawn(function()
