@@ -9,10 +9,7 @@
 
 
 local Players = game:GetService("Players")
-
--- Hàm được gọi để kiểm tra số lượng người chơi
-
-   local playerCount = #Players:GetPlayers()
+    local playerCount = #game:GetService("Players"):GetPlayers()
 local FullMoon = ""
 
 spawn(function()
@@ -42,7 +39,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadsafdfasf/b/main
                         {
                             ["embeds"]= {
                                 {            
-                                    ["title"]= "Đảo Bí Ẩn TEST";
+                                    ["title"]= "Đảo Bí Ẩn";
                                     ["color"]= tonumber(0x7269da);
                                     
                                     ["fields"]= {
@@ -14002,7 +13999,6 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Destroy()
 
     
 end)
-
 
 
 
