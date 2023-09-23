@@ -4871,7 +4871,7 @@ Setting:Line()
 
 Setting:Button("Sao Chép Link Facebook",function()
  
- setclipboard("https://www.facebook.com/profile.php?id=61551719192285")
+ setclipboard("https://www.facebook.com/asukanaken")
   DiscordLib:Notification("Thông Báo" , "Đã Sao Chép Link Facebook" , 10 ,11816162894 )
  end)
 
@@ -13997,7 +13997,6 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Destroy()
 
     
 end)
-
 
 
 
