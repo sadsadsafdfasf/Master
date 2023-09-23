@@ -627,10 +627,8 @@ local NotiFrame = Instance.new("Frame")
 		end
 		)
 	end 
-	DiscordLib:Notification("Thông Báo" , "Cần Bán Acc v4 full gear Acc Ae nào cần ib nhé" , 6 ,11816162894 )
-DiscordLib:Notification("Thông Báo" , "Nhận Cày Thuê" , 6 ,11816162894 )
- DiscordLib:Notification("Thông Báo" , "Link Facebook Ở Phần Setting Nhé" , 6 ,11816162894 )
-  DiscordLib:Notification("Thông Báo" , "Fix Reset Acc r Nhé Ae" , 10 ,11816162894 )
+	DiscordLib:Notification("Thông Báo" , "́ib Facebook Cho Admin Nhận 5rb Mua Skin" , 6 ,11816162894 )
+	DiscordLib:Notification("Thông Báo" , "Link Facebook Ở Phần Setting" , 6 ,11816162894 )
  local UserInputService = game:GetService("UserInputService")
  local TweenService = game:GetService("TweenService")
  
@@ -4873,7 +4871,7 @@ Setting:Line()
 
 Setting:Button("Sao Chép Link Facebook",function()
  
- setclipboard("https://www.facebook.com/yamatekunasai")
+ setclipboard("https://www.facebook.com/profile.php?id=61551719192285")
   DiscordLib:Notification("Thông Báo" , "Đã Sao Chép Link Facebook" , 10 ,11816162894 )
  end)
 
@@ -13999,7 +13997,6 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Destroy()
 
     
 end)
-
 
 
 
