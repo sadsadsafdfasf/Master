@@ -10332,6 +10332,301 @@ end
 end
 end)
 
+
+
+Race:Toggle("Nói Chuyện Với Đá Cấp Tốc",false,function(value)
+local DiscordLib = {}
+	local TweenService = game:GetService("TweenService")
+	local Balaraja = Instance.new("ScreenGui")
+	
+	Balaraja.Name = "Balaraja"
+    Balaraja.Parent = game.CoreGui
+    Balaraja.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+local NotiFrame = Instance.new("Frame")
+	NotiFrame.Name = "NotiFrame"
+	NotiFrame.Parent = Balaraja
+	NotiFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+	NotiFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	NotiFrame.BackgroundTransparency = 1
+	NotiFrame.Position = UDim2.new(1.2, 0, 0.0613496937, 0)
+	NotiFrame.Size = UDim2.new(0, 1632, 0, 100)
+
+	local Notilistlayout = Instance.new("UIListLayout")
+
+	Notilistlayout.Name = "Notilistlayout"
+	Notilistlayout.Parent = NotiFrame
+	Notilistlayout.FillDirection = Enum.FillDirection.Vertical
+	Notilistlayout.SortOrder = Enum.SortOrder.LayoutOrder
+	Notilistlayout.Padding = UDim.new(0, 5)
+
+	function DiscordLib:Notification(text,text2,delays,logo)
+		if logo == nil then
+			logo = ""
+		end
+		if delays == nil then
+			delays = 1
+		end
+		local TitleFrame = Instance.new("Frame")
+
+		TitleFrame.Name = "TitleFrame"
+		TitleFrame.Parent = NotiFrame
+		TitleFrame.BackgroundColor3 = Color3.fromRGB(35,35,35)
+		TitleFrame.Size = UDim2.new(0, 0, 0, 0)
+
+		local Main_UiStroke = Instance.new("UIStroke")
+
+		Main_UiStroke.Thickness = 1
+		Main_UiStroke.Name = ""
+		Main_UiStroke.Parent = TitleFrame
+		Main_UiStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+		Main_UiStroke.LineJoinMode = Enum.LineJoinMode.Round
+		Main_UiStroke.Color = Color3.fromRGB(255, 255, 255)
+		Main_UiStroke.Transparency = 0
+
+		TitleFrame:TweenSizeAndPosition(UDim2.new(0, 250-10, 0, 70),  UDim2.new(0.5, 0, 0.5,0), "Out", "Back", 0.3, true)
+
+		local ConnerTitile = Instance.new("UICorner")
+
+		ConnerTitile.CornerRadius = UDim.new(0, 4)
+		ConnerTitile.Name = "ConnerTitile"
+		ConnerTitile.Parent = TitleFrame
+
+		local imagenoti = Instance.new("ImageLabel")
+
+		imagenoti.Name = "imagenoti"
+		imagenoti.Parent = TitleFrame
+		imagenoti.AnchorPoint = Vector2.new(0.5, 0.5)
+		imagenoti.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		imagenoti.Position = UDim2.new(0.135999978, 0, 0.5, 0)
+		imagenoti.Size = UDim2.new(0, 50, 0, 50)
+		imagenoti.BackgroundTransparency = 1
+		imagenoti.Image = "http://www.roblox.com/asset/?id="..tostring(logo)
+
+		local txdlid = Instance.new("TextLabel")
+		local LableFrame = Instance.new("Frame")
+
+		txdlid.Name = "txdlid"
+		txdlid.Parent = TitleFrame
+		txdlid.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+		txdlid.BackgroundTransparency = 1.000
+		txdlid.Position = UDim2.new(0.25, 0, 0.15, 0)
+		txdlid.Size = UDim2.new(0, 175, 0, 24)
+		txdlid.Font = Enum.Font.LuckiestGuy	
+		txdlid.TextColor3 = Color3.fromRGB(85, 170, 255)
+		txdlid.TextSize = 13.000
+		txdlid.Text = text
+		txdlid.TextXAlignment = Enum.TextXAlignment.Left
+
+		LableFrame.Name = "LableFrame"
+		LableFrame.Parent = TitleFrame
+		LableFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+		LableFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		LableFrame.BackgroundTransparency = 1.000
+		LableFrame.Position = UDim2.new(0.625999987, 0, 0.620000005, 0)
+		LableFrame.Size = UDim2.new(0, 175, 0, 25)
+
+		local TextNoti = Instance.new("TextLabel")
+
+		TextNoti.Name = "TextNoti"
+		TextNoti.Parent = LableFrame
+		TextNoti.Active = true
+		TextNoti.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextNoti.BackgroundTransparency = 1.000
+		TextNoti.Size = UDim2.new(0, 175, 0, 25)
+		TextNoti.Font = Enum.Font.GothamBlack
+		TextNoti.Text = text2
+		TextNoti.TextScaled = true
+		TextNoti.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextNoti.TextSize = 12.000
+		TextNoti.TextXAlignment = Enum.TextXAlignment.Left
+
+		repeat wait() until TitleFrame.Size == UDim2.new(0, 250-10, 0, 70)
+
+		local Time = Instance.new("Frame")
+		local UICorner = Instance.new("UICorner")
+		local UIPadding = Instance.new("UIPadding")
+
+		Time.Name = "Time"
+		Time.Parent = TitleFrame
+		Time.Active = true
+		Time.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+		Time.BorderSizePixel = 0
+		Time.Position = UDim2.new(0.0320000015, 0, 0.870000005, 0)
+		Time.Size = UDim2.new(0, 236, 0, 3)
+
+		UICorner.Parent = Time
+		UICorner.CornerRadius = UDim.new(0, 7)
+		UICorner.Name = ""
+
+		UIPadding.Parent = NotiFrame
+		UIPadding.PaddingLeft = UDim.new(0, 15)
+		UIPadding.PaddingTop = UDim.new(0, 15)
+
+		TweenService:Create(
+			Time,
+			TweenInfo.new(tonumber(delays), Enum.EasingStyle.Linear, Enum.EasingDirection.InOut),
+			{Size = UDim2.new(0, 0, 0, 3)} -- UDim2.new(0, 128, 0, 25)
+		):Play()
+		delay(tonumber(delays),function()
+			TweenService:Create(
+				imagenoti,
+				TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut),
+				{ImageTransparency = 1} -- UDim2.new(0, 128, 0, 25)
+			):Play()
+			TweenService:Create(
+				TextNoti,
+				TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut),
+				{TextTransparency = 1} -- UDim2.new(0, 128, 0, 25)
+			):Play()
+			TweenService:Create(
+				txdlid,
+				TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut),
+				{TextTransparency = 1} -- UDim2.new(0, 128, 0, 25)
+			):Play()
+			wait(0.3)
+			TweenService:Create(
+				TitleFrame,
+				TweenInfo.new(0.4, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut),
+				{Size = UDim2.new(0, 0, 0, 70)} -- UDim2.new(0, 128, 0, 25)
+			):Play()
+			wait(0.3)
+			TitleFrame:Destroy()
+		end
+		)
+	end 
+
+
+function topos(Pos)
+        Distance = (Pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+        if game.Players.LocalPlayer.Character.Humanoid.Sit == true then game.Players.LocalPlayer.Character.Humanoid.Sit = false end
+        pcall(function() tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/250, Enum.EasingStyle.Linear),{CFrame = Pos}) end)
+        tween:Play()
+        if Distance <= 250  then
+            tween:Cancel()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Pos
+        end
+        if _G.StopTween == true then
+            tween:Cancel()
+            _G.Clip = false
+        end
+    end
+    
+    function GetDistance(target)
+        return math.floor((target.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude)
+    end
+
+function two(gotoCFrame) --- Tween
+      pcall(function()
+          game.Players.LocalPlayer.Character.Humanoid.Sit = false
+          game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+      end)
+      if (game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart.Position - gotoCFrame.Position).Magnitude <= 200 then
+          pcall(function() 
+              tweenz:Cancel()
+          end)
+          game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart.CFrame = gotoCFrame
+      else
+          local tween_s = game:service"TweenService"
+          local info = TweenInfo.new((game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart.Position - gotoCFrame.Position).Magnitude/999999, Enum.EasingStyle.Linear)
+           tween, err = pcall(function()
+              tweenz = tween_s:Create(game.Players.LocalPlayer.Character["HumanoidRootPart"], info, {CFrame = gotoCFrame})
+              tweenz:Play()
+          end)
+          if not tween then return err end
+      end
+      function _TweenCanCle()
+          tweenz:Cancel()
+      end
+  
+end
+
+
+
+local args = {
+    [1] = "requestEntrance",
+    [2] = Vector3.new(-12463.6025390625, 378.3270568847656, -7566.0830078125)
+}
+
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+wait(1)
+two(CFrame.new(-5043.92432, 316.20578, -2994.26904, -0.996121764, 0.00353530352, 0.0879130736, -1.68627594e-07, 0.999192297, -0.0401832461, -0.0879841298, -0.0400274247, -0.99531734))
+wait(1)
+topos(CFrame.new(-5355.62256, 313.715485, -2495.17383, 0.447177857, 6.1724144e-08, 0.894445062, 3.27962084e-08, 1, -8.54047784e-08, -0.894445062, 6.75255336e-08, 0.447177857))
+wait(4)
+two(CFrame.new(-5501.28369, 1090.39294, -2465.23438, -0.865793586, 0.025783211, 0.499736547, 2.4792098e-07, 0.99867171, -0.0515246391, -0.500401258, -0.0446095653, -0.864643633))
+two(CFrame.new(-5844.28418, 1074.10681, -2100.07422, 0.957914591, 0.0115018021, 0.286822826, 4.72762622e-07, 0.999196887, -0.0400702134, -0.287053347, 0.0383839831, 0.957145214))
+local args = {
+    [1] = "RaceV4Progress",
+    [2] = "Check"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+local args = {
+    [1] = "RaceV4Progress",
+    [2] = "Begin"
+}
+
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+
+wait(1)
+
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.3555, 14896.5352, 102.624695, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+ wait(0.5)
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.3555, 14896.5352, 102.624695, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+ wait(1)
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.3555, 14896.5352, 102.624695, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+ wait(1.5)
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.3555, 14896.5352, 102.624695, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+ two(CFrame.new(28608.6953, 14898.1895, 105.982483, 0.403912157, -0.0356420763, -0.91410315, 6.79865479e-08, 0.999240696, -0.0389616787, 0.914797783, 0.015737053, 0.403605521))
+ wait(1)
+local args = {
+    [1] = "RaceV4Progress",
+    [2] = "TeleportBack"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+
+
+wait(1.5)
+local args = {
+    [1] = "RaceV4Progress",
+    [2] = "Teleport"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+wait(2)
+
+local args = {
+    [1] = "requestEntrance",
+    [2] = Vector3.new(-12463.6025390625, 378.3270568847656, -7566.0830078125)
+}
+
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+wait(1)
+two(CFrame.new(-5043.92432, 316.20578, -2994.26904, -0.996121764, 0.00353530352, 0.0879130736, -1.68627594e-07, 0.999192297, -0.0401832461, -0.0879841298, -0.0400274247, -0.99531734))
+topos(CFrame.new(-5355.62256, 313.715485, -2495.17383, 0.447177857, 6.1724144e-08, 0.894445062, 3.27962084e-08, 1, -8.54047784e-08, -0.894445062, 6.75255336e-08, 0.447177857))
+
+
+local args = {
+    [1] = "RaceV4Progress",
+    [2] = "Check"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+local args = {
+    [1] = "RaceV4Progress",
+    [2] = "Continue"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+DiscordLib:Notification("Thông Báo" , "Hoàn Tất" , 10 ,11816162894 )
+end)
+
+
+
+
+
 Race:Button("Nhặt Gear",function()
     for _,v in next, Workspace.Map.MysticIsland:GetDescendants() do
     if v.Name:find("Part") and v.ClassName == "MeshPart" then
