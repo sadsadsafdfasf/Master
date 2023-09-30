@@ -31,6 +31,7 @@ spawn(function()
                 end)
             end
 end)
+
 if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadsafdfasf/b/main/wedhook'))()
 
@@ -75,8 +76,52 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadsafdfasf/b/main
                    
                     Request(Final1)
                     end
--- Gui to Lua
--- Version: 3.5
+
+
+
+if World3 then
+if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadsafdfasf/b/main/wedhook'))()
+
+                    local HttpService = game:GetService("HttpService")
+                    local Data =
+                        {
+                            ["embeds"]= {
+                                {            
+                                    ["title"]= "Full Moon";
+                                    ["color"]= tonumber(0x7269da);
+                                    
+                                    ["fields"]= {
+                                        {
+                                            ["name"]= "Check Trăng",
+                                            ["value"]= FullMoon,
+                                            ["inline"]= true
+                                        },
+                                        {
+                                            ["name"]= "Người Trong Sever",
+                                            ["value"]= "```"..playerCount.."/12```",
+                                            ["inline"]= true
+                                        },
+                                    {
+                                            ["name"]= "lệnh teleport sever",
+                                            ["value"]= 'game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)',
+                                            ["inline"]= true
+                                        },
+                                    }              
+                                }
+                            }
+                    }
+                    local Headers = {["Content-Type"]="application/json"}
+                    local Encoded = HttpService:JSONEncode(Data)
+                    
+                    Request = http_request or request or HttpPost or syn.request
+                    local Final1 = {Url = _G.FullMoon , Body = Encoded, Method = "POST", Headers = Headers}
+                   
+                    Request(Final1)
+end
+                end
+
+
 function Attack1Function()
 	local ac = CombatFrameworkR.activeController
 	if ac and ac.equipped then
@@ -14292,7 +14337,6 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Destroy()
 
     
 end)
-
 
 
 
