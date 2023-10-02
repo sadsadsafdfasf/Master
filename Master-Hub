@@ -121,16 +121,20 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadsafdfasf/b/main
                                     ["color"]= tonumber(0x7269da);
                                     
                                     ["fields"]= {
+                                        
+                                        {
+                                            ["name"]= "Time",
+                                            ["value"]= Checktime,
+                                            ["inline"]= true
+                                        },
+                                        
+                                        
                                         {
                                             ["name"]= "Check Trăng",
                                             ["value"]= FullMoon,
                                             ["inline"]= true
                                         },
-                                    {
-                                            ["name"]= "Time",
-                                            ["value"]= Checktime,
-                                            ["inline"]= true
-                                        },
+                                    
                                         {
                                             ["name"]= "Người Trong Sever",
                                             ["value"]= "```"..playerCount.."/12```",
