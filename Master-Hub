@@ -35,7 +35,9 @@ spawn(function()
 
         pcall(function()
             local currentTime = game.Lighting.TimeOfDay
-            if currentTime >= "14:00:00" and currentTime <= "14:59:00" then
+            if currentTime >= "13:00:00" and currentTime <= "13:59:00" then
+                Checktime = "1H Chiều ✅"
+            elseif currentTime >= "14:00:00" and currentTime <= "14:59:00" then
                 Checktime = "2H Chiều ✅"
                 elseif currentTime >= "15:00:00" and currentTime <= "15:59:00" then
                 Checktime = "3H Chiều ✅"
@@ -122,6 +124,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadsafdfasf/b/main
                                         {
                                             ["name"]= "Check Trăng",
                                             ["value"]= FullMoon,
+                                            ["inline"]= true
+                                        },
+                                    {
+                                            ["name"]= "Time",
+                                            ["value"]= Checktime,
                                             ["inline"]= true
                                         },
                                         {
@@ -14416,7 +14423,6 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Destroy()
 
     
 end)
-
 
 
 
