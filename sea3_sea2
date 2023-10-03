@@ -691,7 +691,7 @@ spawn(function()
                 game:GetService("VirtualInputManager"):SendKeyEvent(true,"Space",false,game)
             game.Players.LocalPlayer.Character.Humanoid.Health = 0
             end
-            wait(4)
+            wait(5)
             
            end end) end end) end
 end
@@ -730,7 +730,7 @@ spawn(function()
             game:GetService("VirtualInputManager"):SendKeyEvent(true,"Space",false,game)
             game.Players.LocalPlayer.Character.Humanoid.Health = 0
             end
-            wait(4)
+            wait(5)
             
            end end) end end) end
 
