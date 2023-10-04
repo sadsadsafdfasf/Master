@@ -60,7 +60,7 @@ end end end
              local Distance = (pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
                   if Distance >= 0 then
                   wait(.1)
-                  Speed = 350
+                  Speed = 35000000
                   end
 
 game:GetService("TweenService"):Create(
@@ -73,7 +73,7 @@ end  end end
               end) end end)                
              
            spawn(function()
-    while task.wait(1) do
+    while task.wait(0.1) do
         pcall(function()
 if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Bomb Fruit") or game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Bomb Fruit") then
                     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StoreFruit","Bomb-Bomb",game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Bomb Fruit"))
