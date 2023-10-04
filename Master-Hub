@@ -1,4 +1,5 @@
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadsafdfasf/Master/main/checkfm'))()
+
+
 
 
 function Attack1Function()
@@ -14206,7 +14207,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.Fragments:Destroy()
 end)
 
 
-
+ 
 
 
 
